@@ -1,6 +1,6 @@
 {
   "politica": {
-    "alvo_precisao": 0.96,
+    "alvo_precisao": 0.95,
     "piso_confianca": 0.85,
     "fora_p_penal_max": 0.2,
     "subtema_p_min": 0.9,

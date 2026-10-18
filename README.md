@@ -12,12 +12,13 @@ dentro dela, a maior cobertura possível, dependendo o mínimo do professor.
 | Explicação visual para quem não é técnico | [`docs/como_resolvemos.pdf`](docs/como_resolvemos.pdf) |
 
 **Resultado:**
-- **Publicadas:** 115 das 359 (32%), com **96% de acerto previsto**, na faixa de 93% a 97%.
-- **Revisar:** 241, cada uma com sugestão de tema, a justificativa do revisor automático e o motivo. Elas não vão uma
+- **Publicadas:** 121 das 359 (34%), com **96% de acerto previsto** (95,6%), na faixa de 92% a 97%. A política
+  publica o maior conjunto com precisão esperada ≥ 95%, a régua do case, sem folga.
+- **Revisar:** 235, cada uma com sugestão de tema, a justificativa do revisor automático e o motivo. Elas não vão uma
   a uma para o professor: em produção, ficam na prática geral (simulados e listas mistas) e são reavaliadas toda semana.
 - **Fora:** 3. Uma é de Direito Tributário (ITCMD) e duas citam leis que não têm tema na árvore (Lei 9.029/95 e Lei
   Geral do Esporte).
-- **Cenário alternativo:** se a equipe confirmar que usa o tema original nos temas repetidos, a cobertura sobe para 50%
+- **Cenário alternativo:** se a equipe confirmar que usa o tema original nos temas repetidos, a cobertura sobe para 53%
   com a mesma precisão prevista.
 
 ## A ideia
@@ -117,13 +118,13 @@ e Nouls; os critérios de cada opção vêm do tesauro (`src/thesaurus.py`, fun�
 | Rodada com erro no texto (descartada; as respostas foram apagadas do cache) | 1.953 | — | US$ 0,66 |
 | **Total** | | | **~US$ 4,15** |
 
-**Qual revisor.** Com a mesma régua, o GPT-6 Luna publica tanto quanto os modelos caros (115 questões, contra 111 só
-com o Jev) por uma fração do preço:
+**Qual revisor.** Com a mesma régua, o GPT-6 Luna publica mais que os modelos caros (121 questões, contra 115 do Sol e
+do Sonnet e 116 só com o Jev) por uma fração do preço:
 
 | Revisor | R$ por semana (50 mil questões) | Publicadas |
 |---|---|---|
-| GPT-6 Luna | R$ 50 | 115 |
-| Claude Haiku 5.5 | R$ 106 | 111 |
+| GPT-6 Luna | R$ 50 | 121 |
+| Claude Haiku 5.5 | R$ 106 | 120 |
 | GPT-6.1 Sol | R$ 551 | 115 |
 | Claude Sonnet 5.5 | R$ 965 | 115 |
 | Comitê dos quatro | R$ 1.672 | 104 |
@@ -145,14 +146,16 @@ auditoria por amostra (ver `relatorio.md`, seção c).
 4. **Convenção "conservador"** em `config/politica.json`: temas repetidos e partes não são publicados, porque só a equipe
    sabe qual endereço usou. Para o cenário "nós antigos", troque `"convencao"` no config (ou rode
    `python src/s07_politica.py --convencao nos_antigos`) e depois `python src/s08_previsao.py`.
-5. **Alvo de 96%** de precisão esperada, uma folga sobre os 95%, com piso de 0,85 por questão.
+5. **Alvo de 95%** de precisão esperada, a régua do case, sem folga, e piso de 0,85 de confiança por questão, para não
+   publicar questão incerta compensada por outras muito certas. Com 121 publicadas, a régua tolera até 6 erros; o alvo
+   de 96% publicaria 115 com risco parecido de passar disso (28% × 29%, só pelo acaso).
 6. **Nunca publicar na disciplina (raiz).** A regra aceitaria, mas recriaria a lixeira.
 7. **Termos propostos pelo Jev não votam como testemunha.** Eles ajudam o Jev a decidir e vão para aprovação. Se
    votassem, o Jev estaria conferindo a si mesmo.
 8. **Revisor automático: GPT-6 Luna** (`revisor_llm` em `config/politica.json`), escolhido pelo custo-benefício. O voto
    dele não é somado como testemunha independente, porque erra junto com o Jev nas questões difíceis: a calibração é
    medida separadamente para "revisor concorda" e "revisor discorda". Com `"usar": false`, volta a versão só com o Jev
-   (111 publicadas).
+   (116 publicadas).
 9. **O campo `comando` é descartado**, porque em parte das questões ele foi gerado artificialmente ("Explique...",
    "Indique..."). A exceção é Certo/Errado em que o próprio item a julgar está no comando e o enunciado só diz "julgue
    o próximo item" (3 questões).

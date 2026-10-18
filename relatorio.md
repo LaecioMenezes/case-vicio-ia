@@ -3,9 +3,10 @@
 **Em cinco linhas.** Tratei o case como um problema de **vocabulário**: a árvore tem temas repetidos, temas fatiados em
 "Partes", temas genéricos que viraram lixeira e descrições vazias. A biblioteconomia resolve isso com um **tesauro**
 (vocabulário controlado, ISO 25964). O **Jev** (TypeSafe) lê cada questão e decide entre os conceitos do tesauro, com
-probabilidades; um LLM barato (**GPT-6 Luna**) faz a revisão automática. Publicamos **115 das 359 questões (32%)**, com
-**96% de acerto previsto (93% a 97%)**. O desenho **não depende de revisão questão a questão pelo professor**. Com uma
-única decisão de cadastro sobre os temas repetidos, a cobertura vai a **50%**. Custo total desta entrega: ~US$ 4,15.
+probabilidades; um LLM barato (**GPT-6 Luna**) faz a revisão automática. Publicamos **121 das 359 questões (34%)**, com
+**96% de acerto previsto (95,6%; faixa de 92% a 97%)**, na régua de 95% do case, sem folga. O desenho **não depende de
+revisão questão a questão pelo professor**. Com uma única decisão de cadastro sobre os temas repetidos, a cobertura vai a
+**53%**. Custo total desta entrega: ~US$ 4,15.
 
 ## a) Como pensei
 
@@ -55,14 +56,14 @@ custo por semana considera 50 mil questões, com o dólar a R$ 5,20.
 
 | Revisor | R$ por semana | Acerto sozinho | Acerto quando concorda com o Jev | Publicadas |
 |---|---|---|---|---|
-| (nenhum: só Jev) | — | 71% | — | 111 |
-| **GPT-6 Luna** | **R$ 50** | 74% | 83% | **115** |
-| Claude Haiku 5.5 | R$ 106 | 73% | 87% | 111 |
+| (nenhum: só Jev) | — | 71% | — | 116 |
+| **GPT-6 Luna** | **R$ 50** | 74% | 83% | **121** |
+| Claude Haiku 5.5 | R$ 106 | 73% | 87% | 120 |
 | GPT-6.1 Sol | R$ 551 | 78% | 91% | 115 |
 | Claude Sonnet 5.5 | R$ 965 | 77% | 86% | 115 |
 | Comitês (Sol + Sonnet; os 4 LLMs) | R$ 1.500 a 1.700 | — | 93% | 104 a 110 |
 
-O Luna dá o mesmo ganho dos modelos caros por uma fração do preço. **Mesmo quando os cinco modelos (o Jev e os quatro
+O Luna dá o maior ganho, por uma fração do preço. **Mesmo quando os cinco modelos (o Jev e os quatro
 LLMs) concordam, o acerto fica em ~93%**: somar modelos não basta para publicar o resto com 95%.
 
 **6. Becos sem saída.**
@@ -71,7 +72,7 @@ LLMs) concordam, o acerto fica em ~93%**: somar modelos não basta para publicar
 - **O assunto de origem como rótulo:** acerta ~49% das vezes.
 - **As contagens "N questões no source" como ponto de partida:** estão infladas pelas lixeiras.
 - **Publicar na disciplina (raiz):** a regra aceitaria, mas recriaria a lixeira.
-- **Assumir que a equipe usou os temas antigos:** daria 50%, mas só fica acima de 95% se pelo menos 97% dessas questões
+- **Assumir que a equipe usou os temas antigos:** daria 53%, mas só fica acima de 95% se pelo menos 98% dessas questões
   estiverem mesmo neles.
 - **Notas de fronteira em lote:** as hesitações estão espalhadas por 58 pares, quase todos com uma questão só.
 - **Descartar sempre o campo `comando`** (às vezes ele é sintético): escondia o item de 3 questões Certo/Errado. Uma
@@ -101,9 +102,9 @@ LLMs) concordam, o acerto fica em ~93%**: somar modelos não basta para publicar
 4. **Temas repetidos e fatiados:** o conteúdo está certo e o endereço é incerto.
 5. **Temas genéricos.**
 
-**Por que 241 não foram publicadas.**
-- 90 caem em temas repetidos ou partes: os cinco modelos concordam no conteúdo de 77 delas, falta só o endereço;
-- 88 têm confiança baixa;
+**Por que 235 não foram publicadas.**
+- 95 caem em temas repetidos ou partes: os cinco modelos concordam no conteúdo de 81 delas, falta só o endereço;
+- 77 têm confiança baixa;
 - 63 dispararam um alarme do Jev ou do revisor.
 
 ## c) Produção (50 mil questões por semana): zero revisão item a item
@@ -129,7 +130,7 @@ Reporte de aluno numa questão publicada a devolve à prática geral e reabre a 
 **Do professor: cerca de 1 hora por semana, qualquer que seja o volume, sem revisão item a item.**
 1. **Decisões que valem por centenas de questões**, tomadas uma vez: qual dos temas repetidos vale, o que entra em
    cada "Parte" e quais temas criar quando chega um alerta de tema faltando. Aqui, a decisão sobre os repetidos
-   publica mais 66 questões.
+   publica mais 69 questões.
 2. **Aprovar em lote** as sugestões do Jev para o tesauro.
 3. **Auditoria por amostra:** cerca de 50 publicadas por semana; em um mês, 200, o que mede a precisão com ±3 pontos.
 
@@ -159,11 +160,16 @@ Reporte de aluno numa questão publicada a devolve à prática geral e reabre a 
 
 | Cenário | Publicadas | Precisão prevista |
 |---|---|---|
-| **Entregue:** temas repetidos e partes aguardam a decisão de cadastro | 115 (32%) | 96% (93% a 97%) |
-| Depois da decisão de cadastro (tema original nos repetidos) | 181 (50%) | 96% |
+| **Entregue:** temas repetidos e partes aguardam a decisão de cadastro | 121 (34%) | 96% (95,6%; 92% a 97%) |
+| Depois da decisão de cadastro (tema original nos repetidos) | 190 (53%) | 96% |
 
 A previsão (`previsao.txt`) é a média das confianças calibradas das publicadas. O intervalo vem de um bootstrap que
 refaz a triangulação sorteando as hipóteses do método.
+
+**A régua, sem folga.** Publicamos o maior conjunto com precisão esperada ≥ 95%, a régua do case, e nenhuma questão
+com confiança abaixo de 0,85. Com 121 publicadas, a régua tolera até 6 erros. A chance de passar disso só pelo acaso é
+de ~28%, antes de somar a incerteza da calibração; com o alvo de 96%, seriam 115 publicadas e risco parecido (29%).
+Tirar também o piso daria 126 publicadas, mas com risco de 42%.
 
 **Com mais tempo.**
 - Obter da equipe a decisão sobre os temas repetidos.
@@ -181,9 +187,9 @@ refaz a triangulação sorteando as hipóteses do método.
 
 **Professor,**
 
-Classificamos as 359 questões de Penal, Processo Penal, Legislação Especial e Criminologia. **115 podem ir direto ao
+Classificamos as 359 questões de Penal, Processo Penal, Legislação Especial e Criminologia. **121 podem ir direto ao
 aluno**, com acerto previsto de 96%. **Três ficam fora**: uma não é de Direito Penal (isenção de ITCMD) e duas tratam
-de leis que não têm tema na árvore. As outras **241 não pedem revisão do senhor uma a uma**: ficam na prática geral
+de leis que não têm tema na árvore. As outras **235 não pedem revisão do senhor uma a uma**: ficam na prática geral
 (simulados e listas mistas) com a sugestão de tema e a justificativa do revisor automático, e são publicadas sozinhas
 quando a evidência for suficiente.
 
@@ -203,8 +209,8 @@ quando a evidência for suficiente.
    pela Lei Geral do Esporte (Lei 14.597/2023).
 
 **Do que precisamos do senhor: cerca de 1 hora por semana, nunca questão por questão.**
-1. **Uma decisão, uma vez:** quais dos temas repetidos valem. Isso publica sozinho mais 66 questões agora (cobertura
-   de 32% para 50%) e todas as futuras desses temas.
+1. **Uma decisão, uma vez:** quais dos temas repetidos valem. Isso publica sozinho mais 69 questões agora (cobertura
+   de 34% para 53%) e todas as futuras desses temas.
 2. **Cerca de 30 minutos por semana** aprovando em lote as sugestões para o dicionário de temas
    (`out/termos_propostos_jev.csv`, `out/tesauro_auditoria.csv`, `out/fronteiras_sugeridas.csv`).
 3. **Cerca de 30 minutos por semana** conferindo uma amostra das publicadas, para medirmos com números a régua de 95%.
