@@ -4,7 +4,7 @@
 "Partes", temas genéricos que viraram lixeira e descrições vazias. A biblioteconomia resolve isso com um **tesauro**
 (vocabulário controlado, ISO 25964). O **Jev** (TypeSafe) lê cada questão e decide entre os conceitos do tesauro, com
 probabilidades; um LLM barato (**GPT-6 Luna**) faz a revisão automática. Publicamos **121 das 359 questões (34%)**, com
-**96% de acerto previsto (95,6%; faixa de 92% a 97%)**, na régua de 95% do case, sem folga. O desenho **não depende de
+**95,6% de acerto previsto (faixa de 92% a 97%)**, na régua de 95% do case, sem folga. O desenho **não depende de
 revisão questão a questão pelo professor**. Com uma única decisão de cadastro sobre os temas repetidos, a cobertura vai a
 **53%**. Custo total desta entrega: ~US$ 4,15.
 
@@ -160,11 +160,12 @@ Reporte de aluno numa questão publicada a devolve à prática geral e reabre a 
 
 | Cenário | Publicadas | Precisão prevista |
 |---|---|---|
-| **Entregue:** temas repetidos e partes aguardam a decisão de cadastro | 121 (34%) | 96% (95,6%; 92% a 97%) |
-| Depois da decisão de cadastro (tema original nos repetidos) | 190 (53%) | 96% |
+| **Entregue:** temas repetidos e partes aguardam a decisão de cadastro | 121 (34%) | 95,6% (92% a 97%) |
+| Depois da decisão de cadastro (tema original nos repetidos) | 190 (53%) | 95,6% |
 
-A previsão (`previsao.txt`) é a média das confianças calibradas das publicadas. O intervalo vem de um bootstrap que
-refaz a triangulação sorteando as hipóteses do método.
+A previsão (`previsao.txt`) é a média das confianças calibradas das publicadas; no cabeçalho do arquivo ela aparece
+como 0.96, porque o LEIA-ME pede duas casas. O intervalo vem de um bootstrap que refaz a triangulação sorteando as
+hipóteses do método.
 
 **A régua, sem folga.** Publicamos o maior conjunto com precisão esperada ≥ 95%, a régua do case, e nenhuma questão
 com confiança abaixo de 0,85. Com 121 publicadas, a régua tolera até 6 erros. A chance de passar disso só pelo acaso é
@@ -188,7 +189,7 @@ Tirar também o piso daria 126 publicadas, mas com risco de 42%.
 **Professor,**
 
 Classificamos as 359 questões de Penal, Processo Penal, Legislação Especial e Criminologia. **121 podem ir direto ao
-aluno**, com acerto previsto de 96%. **Três ficam fora**: uma não é de Direito Penal (isenção de ITCMD) e duas tratam
+aluno**, com acerto previsto de 95,6% (a régua é 95%). **Três ficam fora**: uma não é de Direito Penal (isenção de ITCMD) e duas tratam
 de leis que não têm tema na árvore. As outras **235 não pedem revisão do senhor uma a uma**: ficam na prática geral
 (simulados e listas mistas) com a sugestão de tema e a justificativa do revisor automático, e são publicadas sozinhas
 quando a evidência for suficiente.

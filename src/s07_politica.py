@@ -111,7 +111,7 @@ def propor(dados, convencao, params=None):
         # convenção: o assunto cai numa família de nós concorrentes?
         disc_q = DISC.get(q["disciplina_origem"])
         olhar = {central, base} | ({s} if s else set())
-        for fid in {fid for no in olhar for fid in tes["nos"][no]["familias"]}:
+        for fid in sorted({fid for no in olhar for fid in tes["nos"][no]["familias"]}):
             f = fam_por_id[fid]
             if f["tipo"] in ("gemeos", "parte", "novo_x_antigo"):
                 p = conv[f["tipo"]]

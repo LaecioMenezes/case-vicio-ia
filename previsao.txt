@@ -26,7 +26,8 @@ que concorda aumenta a confiança e a que discorda diminui (Bayes). Multiplicamo
 de a convenção bater quando o tema existe em mais de um lugar da árvore. Publicamos o maior conjunto com
 confiança média ≥ 95% e piso de 0.85 por questão (limiar 0.85).
 
-- Precisão esperada das publicadas: 95.6% (média das confianças).
+- Precisão esperada das publicadas: 95.6% (média das confianças; no cabeçalho, arredondada a duas casas, como
+  pede o LEIA-ME). A régua do case é 95%.
 - Só pelas probabilidades do Jev, sem triangulação, seria 92.2%.
 - Intervalo de 90%: bootstrap de 1000 reamostras das questões, refazendo a triangulação e
   sorteando as hipóteses do método: κ entre 0.05 e 0.15, o peso do voto do tesauro

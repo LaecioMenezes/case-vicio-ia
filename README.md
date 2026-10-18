@@ -12,8 +12,9 @@ dentro dela, a maior cobertura possível, dependendo o mínimo do professor.
 | Explicação visual para quem não é técnico | [`docs/como_resolvemos.pdf`](docs/como_resolvemos.pdf) |
 
 **Resultado:**
-- **Publicadas:** 121 das 359 (34%), com **96% de acerto previsto** (95,6%), na faixa de 92% a 97%. A política
-  publica o maior conjunto com precisão esperada ≥ 95%, a régua do case, sem folga.
+- **Publicadas:** 121 das 359 (34%), com **95,6% de acerto previsto**, na faixa de 92% a 97% (no `previsao.txt`,
+  0.96, porque o formato pede duas casas). A política publica o maior conjunto com precisão esperada ≥ 95%, a régua do
+  case, sem folga.
 - **Revisar:** 235, cada uma com sugestão de tema, a justificativa do revisor automático e o motivo. Elas não vão uma
   a uma para o professor: em produção, ficam na prática geral (simulados e listas mistas) e são reavaliadas toda semana.
 - **Fora:** 3. Uma é de Direito Tributário (ITCMD) e duas citam leis que não têm tema na árvore (Lei 9.029/95 e Lei

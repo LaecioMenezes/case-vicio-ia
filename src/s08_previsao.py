@@ -84,7 +84,8 @@ que concorda aumenta a confiança e a que discorda diminui (Bayes). Multiplicamo
 de a convenção bater quando o tema existe em mais de um lugar da árvore. Publicamos o maior conjunto com
 confiança média ≥ {cfg['politica']['alvo_precisao']:.0%} e piso de {cfg['politica']['piso_confianca']:.2f} por questão (limiar {tau:.2f}).
 
-- Precisão esperada das publicadas: {prev:.1%} (média das confianças).
+- Precisão esperada das publicadas: {prev:.1%} (média das confianças; no cabeçalho, arredondada a duas casas, como
+  pede o LEIA-ME). A régua do case é 95%.
 - Só pelas probabilidades do Jev, sem triangulação, seria {jev_bruto:.1%}.
 - Intervalo de 90%: bootstrap de {len(medias)} reamostras das questões, refazendo a triangulação e
   sorteando as hipóteses do método: κ entre {tri['kappa_faixa'][0]:.2f} e {tri['kappa_faixa'][1]:.2f}, o peso do voto do tesauro
