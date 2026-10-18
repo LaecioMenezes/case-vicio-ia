@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+# dados da empresa: não vão para o repositório público (o README explica onde colocar os anexos)
+data/raw/
+data/interim/questoes_limpas.jsonl
+cache_req/

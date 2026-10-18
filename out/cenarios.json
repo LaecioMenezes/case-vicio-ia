@@ -1,0 +1,22 @@
+{
+ "conservador": {
+  "publicar": 115,
+  "revisar": 243,
+  "fora": 1,
+  "cobertura": 0.3203342618384401,
+  "precisao_esperada": 0.9612086956521739,
+  "em_familia": 5,
+  "subtema": 46,
+  "tau": 0.878
+ },
+ "nos_antigos": {
+  "publicar": 181,
+  "revisar": 177,
+  "fora": 1,
+  "cobertura": 0.5041782729805014,
+  "precisao_esperada": 0.9605856353591159,
+  "em_familia": 5,
+  "subtema": 63,
+  "tau": 0.877
+ }
+}

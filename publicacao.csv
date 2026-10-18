@@ -1,0 +1,360 @@
+id,decisao,tema_central_id,extras_ids,confianca,motivo
+Q0001,publicar,5524,,0.97,
+Q0002,revisar,4377,,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teorias Legitimidoras da Pena)
+Q0003,revisar,5560,,0.77,tema em mais de um lugar da árvore (Recursos em Espécies | Recursos (Parte 03) - Espécies); falta a convenção da equipe
+Q0004,revisar,5480,,0.78,tema em mais de um lugar da árvore (Competência | Competência (Parte 1) | Competência (Parte 2)); falta a convenção da equipe
+Q0005,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0006,revisar,5157,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
+Q0007,publicar,5064,,0.89,
+Q0008,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0009,revisar,5157,,0.77,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
+Q0010,revisar,4688,6717,0.49,tema em mais de um lugar da árvore (Crimes contra o meio ambiente | Crimes contra o meio ambiente); falta a convenção da equipe
+Q0011,revisar,4702,6723,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes)
+Q0012,revisar,5560,,0.00,o Jev muda de tema quando a ordem das opções muda
+Q0013,revisar,5480,,0.13,confiança 0.13 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Inquérito Policial); o tesauro aponta outro tema (Inquérito Policial)
+Q0014,revisar,5477,,0.53,o Jev não confirmou o tema na pergunta de verificação (P=0.43)
+Q0015,publicar,5498,,0.97,
+Q0016,revisar,5517,,0.33,confiança 0.33 abaixo do limiar 0.88
+Q0017,revisar,5466,,0.75,confiança 0.75 abaixo do limiar 0.88
+Q0018,revisar,4701,,0.10,confiança 0.10 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Competência); o tesauro aponta outro tema (Procedimento Sumaríssimo)
+Q0019,revisar,5475,,0.90,o Jev não confirmou o tema na pergunta de verificação (P=0.23)
+Q0020,revisar,5199,,0.16,o Jev não confirmou o tema na pergunta de verificação (P=0.30)
+Q0021,revisar,5583,,0.20,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação...
+Q0022,revisar,5087,,0.69,confiança 0.69 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes)
+Q0023,publicar,5524,,0.97,
+Q0024,publicar,4388,,0.97,
+Q0025,revisar,5087,,0.76,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0026,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
+Q0027,publicar,5487,,0.97,
+Q0028,publicar,5524,,0.95,
+Q0029,revisar,4684,6716,0.49,tema em mais de um lugar da árvore (Abuso de Autoridade | Abuso de Autoridade); falta a convenção da equipe
+Q0030,revisar,5134,,0.43,confiança 0.43 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Das Lesões Corporais)
+Q0031,publicar,4388,,0.97,
+Q0032,revisar,5498,,0.81,confiança 0.81 abaixo do limiar 0.88
+Q0033,publicar,5519,,0.97,
+Q0034,publicar,5477,,0.95,
+Q0035,publicar,4706,,0.97,
+Q0036,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
+Q0037,revisar,5132,,0.20,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.29)
+Q0038,publicar,5583,,0.95,
+Q0039,revisar,4694,,0.70,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.14)
+Q0040,revisar,5562,,0.43,confiança 0.43 abaixo do limiar 0.88
+Q0041,publicar,5184,,0.97,
+Q0042,publicar,5222,,0.97,
+Q0043,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0044,publicar,5487,,0.93,
+Q0045,revisar,5091,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0046,publicar,5509,,0.95,
+Q0047,revisar,5063,,0.65,confiança 0.65 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Das Lesões Corporais)
+Q0048,revisar,4703,6734,0.00,o Jev muda de tema quando a ordem das opções muda
+Q0049,revisar,5152,,0.01,confiança 0.01 abaixo do limiar 0.88
+Q0050,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0051,publicar,5182,,0.95,
+Q0052,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0053,revisar,4701,,0.29,confiança 0.29 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Procedimento Sumaríssimo); o tesauro aponta outro tema (Procedimento Sumaríssimo)
+Q0054,publicar,5174,,0.97,
+Q0055,revisar,5550,,0.73,confiança 0.73 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Comunicação dos Atos Processuais)
+Q0056,publicar,5066,,0.97,
+Q0057,publicar,5175,,0.97,
+Q0058,revisar,4377,,0.38,o Jev não confirmou o tema na pergunta de verificação (P=0.41)
+Q0059,revisar,4368,,0.01,o Jev muda de tema quando a ordem das opções muda
+Q0060,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0061,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0062,publicar,5182,,0.95,
+Q0063,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
+Q0064,revisar,4695,,0.16,confiança 0.16 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Punibilidade); o tesauro aponta outro tema (Introdução ao Estudo do Direito Penal)
+Q0065,revisar,5157,,0.34,confiança 0.34 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Das Lesões Corporais)
+Q0066,publicar,4373,,0.97,
+Q0067,revisar,5091,,0.77,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0068,revisar,5096,,0.06,o Jev não confirmou o tema na pergunta de verificação (P=0.25)
+Q0069,publicar,5173,,0.97,
+Q0070,revisar,4703,6734,0.42,confiança 0.42 abaixo do limiar 0.88
+Q0071,revisar,4688,6717,0.49,tema em mais de um lugar da árvore (Crimes contra o meio ambiente | Crimes contra o meio ambiente); falta a convenção da equipe
+Q0072,revisar,5590,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Inquérito Policial)
+Q0073,revisar,5087,,0.76,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0074,revisar,4703,6734,0.21,confiança 0.21 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria da Pena)
+Q0075,publicar,5191,,0.97,
+Q0076,revisar,4373,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria Geral da Criminologia)
+Q0077,revisar,5173,,0.72,as alternativas parecem cobrar temas diferentes (questão mista)
+Q0078,publicar,4697,,0.97,
+Q0079,publicar,5581,,0.97,
+Q0080,publicar,4370,,0.97,
+Q0081,publicar,4373,,0.97,
+Q0082,revisar,5087,,0.70,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0083,publicar,5149,,0.88,
+Q0084,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
+Q0085,revisar,5071,,0.16,confiança 0.16 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes); o tesauro aponta outro tema (Dos Crimes Contra a Administração Pública)
+Q0086,revisar,5092,,0.75,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0087,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0088,publicar,4389,,0.97,
+Q0089,revisar,5227,,0.48,confiança 0.48 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria do Crime: Ilicitude); o tesauro aponta outro tema (Introdução ao Estudo do Direito Penal)
+Q0090,revisar,5530,,0.20,o Jev não confirmou o tema na pergunta de verificação (P=0.28)
+Q0091,revisar,4703,6734,0.43,confiança 0.43 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria da Pena); o tesauro aponta outro tema (Teoria da Pena)
+Q0092,publicar,5509,,0.97,
+Q0093,revisar,5218,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes)
+Q0094,publicar,4388,,0.97,
+Q0095,revisar,5063,,0.18,o Jev não confirmou o tema na pergunta de verificação (P=0.39)
+Q0096,revisar,5486,,0.72,tema em mais de um lugar da árvore (Competência | Competência (Parte 1) | Competência (Parte 2)); falta a convenção da equipe
+Q0097,revisar,4708,6728,0.04,confiança 0.04 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes); o tesauro aponta outro tema (Lavagem de Dinheiro (Direito Penal - Legislação...
+Q0098,revisar,5548,,0.64,confiança 0.64 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0099,revisar,5087,,0.34,confiança 0.34 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Das Lesões Corporais)
+Q0100,publicar,5103,,0.95,
+Q0101,revisar,4704,6724,0.48,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
+Q0102,revisar,5572,,0.76,tema em mais de um lugar da árvore (Sentença Penal | Sentença Penal (Parte 1) | Sentença Penal (Parte 2)); falta a convenção da equipe
+Q0103,revisar,5478,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0104,publicar,5498,,0.97,
+Q0105,publicar,4388,,0.97,
+Q0106,revisar,5157,,0.78,o Jev muda de tema quando a ordem das opções muda
+Q0107,revisar,5170,,0.20,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev não confirmou o tema na pergunta de verificação (P=0.31); tema genérico (lixeira) sem confirmação...
+Q0108,revisar,5561,,0.65,confiança 0.65 abaixo do limiar 0.88
+Q0109,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0110,revisar,5480,,0.78,tema em mais de um lugar da árvore (Competência | Competência (Parte 1) | Competência (Parte 2)); falta a convenção da equipe
+Q0111,publicar,4373,,0.95,
+Q0112,revisar,4705,6725,0.49,tema em mais de um lugar da árvore (Organizações Criminosas | Organizações Criminosas); falta a convenção da equipe
+Q0113,revisar,5185,,0.87,confiança 0.87 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Penal)); o tesauro aponta outro tema (Inquérito Policial)
+Q0114,revisar,5505,,0.01,o Jev não confirmou o tema na pergunta de verificação (P=0.40)
+Q0115,publicar,4388,,0.95,
+Q0116,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0117,publicar,4384,,0.97,
+Q0118,revisar,5505,,0.87,confiança 0.87 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Sistemas e Princípios Processuais Penais); o tesauro aponta outro tema (Prisões em Espécie)
+Q0119,publicar,5180,,0.95,
+Q0120,revisar,5530,,0.20,o Jev muda de tema quando a ordem das opções muda
+Q0121,publicar,5466,,0.90,
+Q0122,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0123,revisar,4377,,0.19,confiança 0.19 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Criminologia no Estado Democrático de Direito); o tesauro aponta outro tema (Introdução ao Estudo...
+Q0124,publicar,4384,,0.97,
+Q0125,revisar,4703,6734,0.09,confiança 0.09 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria da Pena); o tesauro aponta outro tema (Tráfico de Drogas (Direito Penal - Legislação...
+Q0126,revisar,5218,,0.20,o Jev não confirmou o tema na pergunta de verificação (P=0.27); as alternativas parecem cobrar temas diferentes (questão mista)
+Q0127,revisar,5572,,0.47,confiança 0.47 abaixo do limiar 0.88
+Q0128,revisar,5466,,0.39,"o revisor trocou o tema, mas sem confiança alta"
+Q0129,revisar,5550,,0.64,o Jev não confirmou o tema na pergunta de verificação (P=0.32)
+Q0130,revisar,5205,,0.57,confiança 0.57 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes)
+Q0131,publicar,5072,,0.97,
+Q0132,revisar,5583,,0.01,o Jev não confirmou o tema na pergunta de verificação (P=0.23)
+Q0133,publicar,5528,,0.96,
+Q0134,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0135,revisar,5169,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
+Q0136,revisar,4704,6724,0.48,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
+Q0137,publicar,5500,,0.97,
+Q0138,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0139,publicar,5211,,0.97,
+Q0140,revisar,5157,,0.76,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
+Q0141,publicar,4388,,0.96,
+Q0142,fora,,,1.00,o Jev indica que a questão não é de matéria penal (P=0.01) e nenhum tema da árvore serve; o assunto de origem confirma
+Q0143,publicar,5505,,0.97,
+Q0144,revisar,5560,,0.47,confiança 0.47 abaixo do limiar 0.88
+Q0145,revisar,4702,6723,0.48,tema em mais de um lugar da árvore (Lavagem de Dinheiro | Lavagem de Dinheiro); falta a convenção da equipe
+Q0146,publicar,5590,,0.95,
+Q0147,publicar,5498,,0.97,
+Q0148,revisar,5203,,0.75,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0149,publicar,5500,,0.97,
+Q0150,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0151,publicar,5517,,0.97,
+Q0152,revisar,5472,,0.86,tema em mais de um lugar da árvore (Ação Penal | Ação Penal); falta a convenção da equipe
+Q0153,revisar,5222,,0.35,o Jev não confirmou o tema na pergunta de verificação (P=0.47)
+Q0154,revisar,5134,,0.31,o Jev não confirmou o tema na pergunta de verificação (P=0.33)
+Q0155,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0156,revisar,4688,6717,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Punibilidade)
+Q0157,revisar,4693,,0.19,confiança 0.19 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Inquérito Policial); o tesauro aponta outro tema (Dos Crimes Contra a Saúde Pública e Dos Crimes...
+Q0158,publicar,4707,,0.97,
+Q0159,revisar,5157,,0.44,"o revisor trocou o tema, mas sem confiança alta"
+Q0160,revisar,5205,,0.77,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0161,revisar,5518,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Inquérito Policial)
+Q0162,revisar,4380,,0.81,o Jev muda de tema quando a ordem das opções muda
+Q0163,revisar,4684,6716,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes)
+Q0164,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0165,revisar,4705,6725,0.49,tema em mais de um lugar da árvore (Organizações Criminosas | Organizações Criminosas); falta a convenção da equipe
+Q0166,revisar,4703,6734,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria da Pena)
+Q0167,revisar,5528,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Comunicação dos Atos Processuais)
+Q0168,revisar,5218,,0.31,confiança 0.31 abaixo do limiar 0.88
+Q0169,revisar,5583,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Das Questões e Processos Incidentes)
+Q0170,revisar,5199,,0.01,o Jev não confirmou o tema na pergunta de verificação (P=0.15)
+Q0171,revisar,4693,,0.00,o Jev não confirmou o tema na pergunta de verificação (P=0.21)
+Q0172,publicar,5466,,0.90,
+Q0173,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0174,revisar,5064,,0.06,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev não confirmou o tema na pergunta de verificação (P=0.17)
+Q0175,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0176,publicar,5081,,0.97,
+Q0177,revisar,5543,6735,0.75,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
+Q0178,publicar,4697,,0.97,
+Q0179,publicar,4369,,0.97,
+Q0180,revisar,5594,,0.81,confiança 0.81 abaixo do limiar 0.88
+Q0181,publicar,4695,,0.95,
+Q0182,revisar,5071,,0.20,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.24)
+Q0183,revisar,5560,,0.34,confiança 0.34 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0184,revisar,4708,6728,0.44,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0185,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0186,revisar,5202,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0187,revisar,5199,,0.74,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0188,publicar,5228,,0.93,
+Q0189,revisar,5472,,0.84,tema em mais de um lugar da árvore (Ação Penal | Ação Penal); falta a convenção da equipe
+Q0190,revisar,4701,,0.52,confiança 0.52 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Procedimento Sumaríssimo); o tesauro aponta outro tema (Teoria da Pena)
+Q0191,revisar,5560,,0.73,tema em mais de um lugar da árvore (Recursos em Espécies | Recursos (Parte 03) - Espécies); falta a convenção da equipe
+Q0192,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0193,revisar,4705,6725,0.48,tema em mais de um lugar da árvore (Organizações Criminosas | Organizações Criminosas); falta a convenção da equipe
+Q0194,revisar,5089,,0.77,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0195,publicar,4373,,0.97,
+Q0196,publicar,4388,,0.97,
+Q0197,publicar,5498,,0.97,
+Q0198,revisar,5071,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.34)
+Q0199,revisar,5218,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.34)
+Q0200,revisar,4705,6725,0.49,tema em mais de um lugar da árvore (Organizações Criminosas | Organizações Criminosas); falta a convenção da equipe
+Q0201,publicar,5103,,0.97,
+Q0202,revisar,5102,,0.41,o Jev muda de tema quando a ordem das opções muda
+Q0203,revisar,4702,6723,0.49,tema em mais de um lugar da árvore (Lavagem de Dinheiro | Lavagem de Dinheiro); falta a convenção da equipe
+Q0204,publicar,5507,,0.97,
+Q0205,revisar,5560,,0.30,o Jev muda de tema quando a ordem das opções muda
+Q0206,publicar,5583,,0.95,
+Q0207,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0208,publicar,5150,,0.97,
+Q0209,publicar,5498,,0.93,
+Q0210,publicar,4697,,0.97,
+Q0211,revisar,5583,,0.70,"o revisor trocou o tema, mas sem confiança alta"
+Q0212,publicar,5488,,0.97,
+Q0213,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0214,publicar,5490,,0.97,
+Q0215,revisar,5201,,0.77,o Jev muda de tema quando a ordem das opções muda
+Q0216,revisar,4701,,0.45,confiança 0.45 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0217,revisar,4384,,0.81,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação...
+Q0218,revisar,5518,,0.53,confiança 0.53 abaixo do limiar 0.88
+Q0219,publicar,5071,,0.97,
+Q0220,publicar,5501,,0.97,
+Q0221,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0222,revisar,4376,,0.69,confiança 0.69 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Penal))
+Q0223,revisar,5087,,0.15,confiança 0.15 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria do Crime: Fato Típico); o tesauro aponta outro tema (Dos Crimes Contra a Administração Judicial)
+Q0224,revisar,5203,,0.71,o Jev não confirmou o tema na pergunta de verificação (P=0.47)
+Q0225,revisar,5478,,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0226,revisar,5544,,0.82,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
+Q0227,publicar,5103,,0.97,
+Q0228,revisar,4703,6734,0.43,confiança 0.43 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal)); o tesauro aponta outro tema (Ações Autônomas de Impugnação)
+Q0229,publicar,5517,,0.97,
+Q0230,revisar,5211,,0.38,o Jev não confirmou o tema na pergunta de verificação (P=0.36)
+Q0231,publicar,5224,,0.97,
+Q0232,publicar,5079,,0.97,
+Q0233,publicar,5178,,0.97,
+Q0234,publicar,4382,,0.88,
+Q0235,revisar,5560,,0.30,o Jev muda de tema quando a ordem das opções muda
+Q0236,revisar,5490,,0.38,o Jev não confirmou o tema na pergunta de verificação (P=0.25)
+Q0237,publicar,5178,,0.97,
+Q0238,revisar,5523,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0239,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0240,revisar,5473,,0.74,confiança 0.74 abaixo do limiar 0.88
+Q0241,publicar,5224,,0.97,
+Q0242,revisar,5512,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Sistemas e Princípios Processuais Penais)
+Q0243,revisar,5178,,0.87,o Jev muda de tema quando a ordem das opções muda
+Q0244,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0245,publicar,5185,,0.97,
+Q0246,publicar,5527,,0.96,
+Q0247,revisar,5191,,0.20,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.40)
+Q0248,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0249,revisar,5583,,0.86,confiança 0.86 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Competência)
+Q0250,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0251,publicar,5191,,0.97,
+Q0252,revisar,4703,6734,0.24,confiança 0.24 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal)); o tesauro aponta outro tema (Teoria da Pena)
+Q0253,publicar,4373,,0.95,
+Q0254,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
+Q0255,publicar,5213,,0.97,
+Q0256,revisar,5218,,0.81,o Jev não confirmou o tema na pergunta de verificação (P=0.43)
+Q0257,publicar,5218,,0.97,
+Q0258,revisar,5545,,0.81,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
+Q0259,revisar,5066,,0.07,confiança 0.07 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria do Crime: Ilicitude); o tesauro aponta outro tema (Dos Crimes Contra o Patrimônio)
+Q0260,revisar,4374,,0.70,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.26)
+Q0261,publicar,5136,,0.97,
+Q0262,revisar,4703,6734,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Medida de Segurança)
+Q0263,revisar,5583,,0.70,confiança 0.70 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Procedimento do Tribunal do Júri)
+Q0264,publicar,5102,,0.97,
+Q0265,revisar,5185,,0.43,confiança 0.43 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Punibilidade)
+Q0266,revisar,5482,,0.70,confiança 0.70 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Procedimento do Tribunal do Júri)
+Q0267,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0268,revisar,5118,,0.38,o Jev não confirmou o tema na pergunta de verificação (P=0.32)
+Q0269,revisar,5170,,0.81,confiança 0.81 abaixo do limiar 0.88
+Q0270,revisar,5091,,0.76,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0271,revisar,5513,,0.18,confiança 0.18 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0272,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
+Q0273,revisar,5222,,0.81,confiança 0.81 abaixo do limiar 0.88
+Q0274,revisar,5157,,0.74,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
+Q0275,revisar,4701,,0.00,o Jev muda de tema quando a ordem das opções muda
+Q0276,revisar,5543,6735,0.83,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
+Q0277,revisar,4696,6722,0.49,tema em mais de um lugar da árvore (Estaturo de Idoso - Crimes | Estatuto do Idoso - Crimes); falta a convenção da equipe
+Q0278,revisar,4701,,0.01,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.38)
+Q0279,revisar,5185,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Punibilidade)
+Q0280,revisar,5466,,0.18,confiança 0.18 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Comunicação dos Atos Processuais)
+Q0281,revisar,5543,6735,0.17,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.45)
+Q0282,revisar,4704,6724,0.48,as alternativas parecem cobrar temas diferentes (questão mista)
+Q0283,revisar,5496,,0.01,confiança 0.01 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0284,revisar,5214,,0.48,confiança 0.48 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes); o tesauro aponta outro tema (Procedimento do Tribunal do Júri)
+Q0285,revisar,4376,,0.31,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.44)
+Q0286,revisar,5199,,0.76,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0287,publicar,5228,,0.97,
+Q0288,revisar,5063,,0.07,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.16); as alternativas parecem cobrar temas diferentes (questão mista)
+Q0289,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
+Q0290,revisar,4701,,0.23,confiança 0.23 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0291,revisar,4708,6728,0.29,confiança 0.29 abaixo do limiar 0.88
+Q0292,publicar,4374,,0.97,
+Q0293,publicar,5185,,0.97,
+Q0294,publicar,5211,,0.97,
+Q0295,revisar,5487,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.43)
+Q0296,revisar,5466,,0.84,o Jev muda de tema quando a ordem das opções muda
+Q0297,revisar,4695,,0.85,confiança 0.85 abaixo do limiar 0.88
+Q0298,revisar,4694,,0.20,o Jev não confirmou o tema na pergunta de verificação (P=0.45)
+Q0299,publicar,4385,,0.88,
+Q0300,publicar,5079,,0.97,
+Q0301,revisar,5197,,0.16,o Jev muda de tema quando a ordem das opções muda
+Q0302,revisar,5218,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.41)
+Q0303,publicar,5180,,0.95,
+Q0304,revisar,4701,,0.72,confiança 0.72 abaixo do limiar 0.88
+Q0305,publicar,5466,,0.90,
+Q0306,publicar,5144,,0.93,
+Q0307,revisar,4707,,0.86,o Jev muda de tema quando a ordem das opções muda
+Q0308,publicar,5498,,0.93,
+Q0309,revisar,4688,6717,0.49,tema em mais de um lugar da árvore (Crimes contra o meio ambiente | Crimes contra o meio ambiente); falta a convenção da equipe
+Q0310,publicar,5505,,0.97,
+Q0311,publicar,5488,,0.97,
+Q0312,publicar,4384,,0.92,
+Q0313,revisar,5572,,0.16,confiança 0.16 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Teoria da Pena)
+Q0314,revisar,5477,,0.86,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.21)
+Q0315,revisar,5185,,0.87,confiança 0.87 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes); o tesauro aponta outro tema (Dos Crimes Contra o Patrimônio)
+Q0316,publicar,5224,,0.97,
+Q0317,revisar,5063,,0.69,confiança 0.69 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Concurso de Crimes)
+Q0318,publicar,5175,,0.97,
+Q0319,publicar,5071,,0.97,
+Q0320,revisar,5550,,0.41,confiança 0.41 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Inquérito Policial); o tesauro aponta outro tema (Tráfico de Drogas (Direito Penal - Legislação...
+Q0321,publicar,5071,,0.97,
+Q0322,revisar,5561,,0.69,confiança 0.69 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Procedimento Ordinário)
+Q0323,revisar,5543,6735,0.36,confiança 0.36 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Sistemas e Princípios Processuais Penais)
+Q0324,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0325,publicar,5466,,0.90,
+Q0326,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0327,revisar,5203,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
+Q0328,revisar,4382,,0.82,confiança 0.82 abaixo do limiar 0.88
+Q0329,revisar,4705,6725,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0330,publicar,5498,,0.97,
+Q0331,revisar,5477,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Comunicação dos Atos Processuais)
+Q0332,revisar,4701,,0.52,confiança 0.52 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal)); o tesauro aponta outro tema (Teoria da Pena)
+Q0333,revisar,4373,,0.01,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.18)
+Q0334,publicar,4380,,0.97,
+Q0335,publicar,5218,,0.95,
+Q0336,revisar,5159,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
+Q0337,revisar,4684,6716,0.49,tema em mais de um lugar da árvore (Abuso de Autoridade | Abuso de Autoridade); falta a convenção da equipe
+Q0338,revisar,5543,6735,0.73,o Jev muda de tema quando a ordem das opções muda
+Q0339,revisar,5572,,0.30,o Jev muda de tema quando a ordem das opções muda
+Q0340,publicar,5071,,0.97,
+Q0341,revisar,5157,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
+Q0342,revisar,5546,,0.76,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
+Q0343,revisar,5472,,0.70,o Jev muda de tema quando a ordem das opções muda
+Q0344,revisar,4688,6717,0.48,tema em mais de um lugar da árvore (Crimes contra o meio ambiente | Crimes contra o meio ambiente); falta a convenção da equipe
+Q0345,publicar,5103,,0.92,
+Q0346,publicar,5583,,0.95,
+Q0347,revisar,5199,,0.69,o Jev não confirmou o tema na pergunta de verificação (P=0.28)
+Q0348,revisar,5093,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
+Q0349,publicar,5175,,0.88,
+Q0350,revisar,4702,6723,0.49,tema em mais de um lugar da árvore (Lavagem de Dinheiro | Lavagem de Dinheiro); falta a convenção da equipe
+Q0351,publicar,5116,,0.97,
+Q0352,publicar,5512,,0.95,
+Q0353,revisar,5185,,0.38,confiança 0.38 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0354,revisar,5218,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.39)
+Q0355,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
+Q0356,publicar,5066,,0.97,
+Q0357,revisar,5134,,0.75,confiança 0.75 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Iter Criminis)
+Q0358,revisar,5134,,0.20,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev não confirmou o tema na pergunta de verificação (P=0.03)
+Q0359,revisar,4696,6722,0.00,confiança 0.00 abaixo do limiar 0.88; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))

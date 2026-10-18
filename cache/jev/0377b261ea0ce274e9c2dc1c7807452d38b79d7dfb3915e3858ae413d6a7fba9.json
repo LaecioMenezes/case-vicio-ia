@@ -1,0 +1,1 @@
+{"key": "0377b261ea0ce274e9c2dc1c7807452d38b79d7dfb3915e3858ae413d6a7fba9", "response": {"model": "typesafe/jev-1.13-20260917", "answers": {"t0": {"type": "noul", "noul": 0.94}, "t1": {"type": "noul", "noul": 0.96}}, "usage": {"input_tokens": 395, "output_tokens": 38, "cost": 1.659e-05}, "id": "gen-dec-1792279141-0Iepa1Gh3WCCXr3zxQNq", "provider": "TypeSafe"}}

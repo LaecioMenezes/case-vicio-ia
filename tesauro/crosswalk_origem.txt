@@ -1,0 +1,39 @@
+# Cruzamento (crosswalk) do vocabulário do site de origem (`assunto_origem`) com a árvore de temas.
+# Mapeamento entre vocabulários no sentido da ISO 25964-2. Só os valores que NÃO casam pelo título
+# normalizado (o casamento exato, parte a parte, é feito no s03). Valores ambíguos ficam de fora de
+# propósito: o assunto de origem é usado como testemunha independente, não como gabarito.
+# Formato:  começo do assunto_origem | tema_id   (FORA = não é matéria penal)
+Lesão Corporal | 5077
+Procedimento do Júri | 5524
+Lei Processual Penal no tempo e no espaço | 5505
+Conceitos Gerais de Criminologia | 4380
+Das Citações e Intimações, Citação no Processo Penal | 5488
+Culpabilidade | 5211
+Teoria do Crime (Fato Típico) | 5218
+Teoria do Crime Fato Típico | 5218
+Causas de extinção da punibilidade | 5191
+Ação penal de iniciativa privada | 5472
+Tipicidade, Erro do tipo essencial | 5224
+Fixação do regime inicial da pena privativa de liberdade | 5201
+Sistemas de Investigação, Investigação Preliminar: Juiz das Garantias | 5503
+Espécies de Medida de Segurança | 5184
+Tipo Penal Doloso | 5222
+Tipo Penal Culposo | 5222
+Procedimento Penal, Procedimento comum sumaríssimo | 5539
+Classificação dos crimes | 5174
+Legislação Penal Especial, Lei de Armas | 4697
+Legislação Penal Especial, Lei de Tóxicos | 4708
+Das Provas, Inadmissibilidade das provas obtidas por meios ilícitos | 5594
+Primeira fase da dosimetria | 5202
+Rito Sumaríssimo | 5539
+Favorecimento de prostituição ou outra forma de exploração sexual de v | 5108
+Do juiz, do ministério público, do acusado e defensor | 5583
+Penas privativas de liberdade | 5201
+Diferenças entre reclusão e detenção | 5201
+Crimes contra a administração pública, Denunciação caluniosa | 5080
+Crimes contra a administração pública, Favorecimento pessoal | 5084
+Teoria Geral do Delito, Tipicidade | 5227
+Procedimento especial da Lei nº 11.343 de 2006 | 4708
+Sistema de responsabilização por ilícitos ambientais | 4688
+Crimes contra a inviolabilidade de segredos | 5133
+Impostos Estaduais | FORA
