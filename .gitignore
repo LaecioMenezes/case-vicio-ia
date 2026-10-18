@@ -5,3 +5,4 @@ __pycache__/
 data/raw/
 data/interim/questoes_limpas.jsonl
 cache_req/
+cache_ao_vivo/

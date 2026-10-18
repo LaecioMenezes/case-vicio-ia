@@ -161,7 +161,7 @@ def main():
         w = csv.writer(f)
         w.writerow(["termo", "conceito_proposto", "certeza", "consistente_2_ordens", "especifico", "n_questoes",
                     "aceito", "aprovado_professor"])
-        for pr in sorted(propostas, key=lambda x: (not x["aceito"], -x["questoes"])):
+        for pr in sorted(propostas, key=lambda x: (not x["aceito"], -x["questoes"], x["termo"])):
             w.writerow([pr["termo"], pr["conceito"], pr["p"], pr["consistente"], pr["especifico"], pr["questoes"],
                         pr["aceito"], ""])
     with open(OUT / "tesauro_auditoria.csv", "w", encoding="utf-8-sig", newline="") as f:

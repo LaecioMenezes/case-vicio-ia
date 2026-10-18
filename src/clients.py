@@ -3,7 +3,8 @@ que revisa (GPT-6 Luna, pelo OpenRouter).
 
 Toda resposta é gravada em cache/<jev|llm>/<sha256 da requisição>.json, que vai para o repositório: o
 publicacao.csv pode ser regenerado sem nenhuma chave de API. A requisição em si (que contém o texto
-das questões, dado da empresa) fica em cache_req/, fora do git.
+das questões, dado da empresa) fica em cache_req/, fora do git. Com run_all.py --chave, nada do cache/ é
+reaproveitado: as respostas novas vão para cache_ao_vivo/<data-hora>/ (ver modo_ao_vivo).
 
 Provedor: por padrão o backend local (JEV_BASE_URL). Se ele não responder como API do Jev, ou com
 JEV_PROVIDER=openrouter, usa o Jev do OpenRouter (POST /api/v1/systemone) com a OPENROUTER_API_KEY.
@@ -19,18 +20,44 @@ from common import CACHE, ROOT, env, sha
 
 OPENROUTER = "https://openrouter.ai/api/v1"
 PRECO_POR_TOKEN = 0.042 / 1e6          # US$ por token de entrada; a saída é grátis
+CUSTO_AO_VIVO = 0.75                   # US$ de uma rodada inteira sem cache (Jev ~0,67 + revisor ~0,07), medido
 # jev_usd: custo de todas as respostas usadas (inclusive as do cache, já pagas antes); jev_usd_novo: só o desta execução
 USAGE = {"jev_usd": 0.0, "jev_usd_novo": 0.0, "jev_tokens": 0, "calls": 0, "cache_hits": 0}
+PASTAS = {"resp": CACHE, "req": ROOT / "cache_req"}
+
+
+def modo_ao_vivo():
+    """run_all.py --chave: nada do cache/ do repositório é reaproveitado. As respostas novas vão para
+    cache_ao_vivo/<data-hora>/ (fora do git), e o cache/ entregue fica intacto."""
+    pasta = ROOT / "cache_ao_vivo" / time.strftime("%Y%m%d-%H%M%S")
+    PASTAS.update(resp=pasta / "cache", req=pasta / "cache_req")
+    return pasta
+
+
+def credito_disponivel():
+    """Saldo na OpenRouter em US$ (o menor entre o da conta e o limite da chave, se houver); None se não der
+    para consultar. Levanta RuntimeError se a OpenRouter recusar a chave."""
+    cab = {"Authorization": f"Bearer {env('OPENROUTER_API_KEY')}"}
+    try:
+        r = _http.get(f"{OPENROUTER}/key", headers=cab)
+        if r.status_code == 401:
+            raise RuntimeError("a OpenRouter recusou a chave (401); confira se ela foi copiada inteira")
+        limite = r.json()["data"].get("limit_remaining")
+        conta = _http.get(f"{OPENROUTER}/credits", headers=cab).json()["data"]
+        saldo = conta["total_credits"] - conta["total_usage"]
+    except (httpx.HTTPError, KeyError, TypeError, ValueError):
+        return None
+    return saldo if limite is None else min(saldo, limite)
 
 
 def cached(kind, payload, fn):
     key = sha(payload)
-    path = CACHE / kind / f"{key}.json"
+    path = PASTAS["resp"] / kind / f"{key}.json"
     if path.exists():
         USAGE["cache_hits"] += 1
         return json.loads(path.read_text(encoding="utf-8"))["response"]
     response = fn()
-    for base, obj in ((CACHE, {"key": key, "response": response}), (ROOT / "cache_req", {"key": key, "request": payload})):
+    for base, obj in ((PASTAS["resp"], {"key": key, "response": response}), (PASTAS["req"], {"key": key, "request": payload})):
         p = base / kind / f"{key}.json"
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps(obj, ensure_ascii=False), encoding="utf-8")

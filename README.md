@@ -48,6 +48,18 @@ python -m venv .venv
 cp .env.example .env                                 # OPENROUTER_API_KEY só é necessária para chamadas novas
 .venv/Scripts/python src/run_all.py
 ```
+**Rodar sem o cache (opcional).** Para conferir que os resultados não dependem do cache, informe a chave da
+OpenRouter no comando. Com a chave, o Jev e o revisor são chamados de novo para todas as questões; sem ela, o
+pipeline usa o cache.
+```bash
+.venv/Scripts/python src/run_all.py --chave sk-or-...
+```
+- São ~2.400 chamadas, ~US$ 0,75 e ~7 minutos. Antes de começar, o script confere a chave e o saldo, e para se o
+  crédito não bastar.
+- O `cache/` entregue não é lido nem alterado: as respostas novas vão para `cache_ao_vivo/<data-hora>/`, fora do git.
+- `publicacao.csv`, `previsao.txt` e `out/` são regravados, e `git diff publicacao.csv previsao.txt` mostra o que
+  mudou em relação à entrega. Os modelos podem variar um pouco de uma rodada para outra.
+
 `run_all.py` roda as etapas abaixo e o validador e grava `publicacao.csv` e `previsao.txt` na raiz. Todas as respostas
 do Jev e do revisor estão em `cache/` (só as respostas; o texto das questões não é publicado), então **o pipeline se
 regenera sem chave nenhuma**, em ~20 segundos e com resultado idêntico (conferido com a chave removida).

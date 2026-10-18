@@ -110,7 +110,7 @@ def evidencias(texto):
     testemunha lexical continua independente do Jev."""
     termos, refs = _indice_lexical()
     ev = []
-    for dip, art in citacoes(texto):
+    for dip, art in sorted(citacoes(texto), key=str):
         for no, fx in refs.get(dip, []):
             if not fx or (art is not None and any(a <= art <= b for a, b in fx)):
                 ev.append({"no": no, "tipo": "ref", "termo": f"{dip}:{art}" if art else dip})
@@ -119,7 +119,7 @@ def evidencias(texto):
     for k, nos in termos.items():
         if f" {k} " in alvo:
             n_conc = len({para.get(no, no) for no in nos})       # termo ambíguo entre conceitos vale menos
-            for no in nos:
+            for no in sorted(nos):
                 ev.append({"no": no, "tipo": "termo", "termo": k, "n_conceitos": n_conc})
     return ev
 
