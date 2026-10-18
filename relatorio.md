@@ -5,7 +5,7 @@
 (vocabulário controlado, ISO 25964). O **Jev** (TypeSafe) lê cada questão e decide entre os conceitos do tesauro, com
 probabilidades; um LLM barato (**GPT-6 Luna**) faz a revisão automática. Publicamos **115 das 359 questões (32%)**, com
 **96% de acerto previsto (93% a 97%)**. O desenho **não depende de revisão questão a questão pelo professor**. Com uma
-única decisão de cadastro sobre os temas repetidos, a cobertura vai a **50%**. Custo total desta entrega: ~US$ 3,50.
+única decisão de cadastro sobre os temas repetidos, a cobertura vai a **50%**. Custo total desta entrega: ~US$ 4,15.
 
 ## a) Como pensei
 
@@ -43,10 +43,10 @@ porque erra junto com o Jev. Medimos direto quanto acerta cada caso: "revisor co
 
 | Teste | Resultado |
 |---|---|
-| Jev **sem** tesauro × **com** tesauro | acerto 67% × 72% (diferença pequena); respostas estáveis 79% × **89%** |
+| Jev **sem** tesauro × **com** tesauro | acerto 67% × 71% (diferença pequena); respostas estáveis 79% × **88%** |
 | Tesauro sozinho | ~90% de acerto quando se manifesta, mas só se manifesta em 177 das 359 |
 | Voto vindo só da lei citada | ~52%: o artigo citado costuma ser o do crime da história, não o da pergunta |
-| Segunda rodada do Jev, só com os 5 finalistas | não melhorou (71% × 72%): descartada |
+| Segunda rodada do Jev, só com os 5 finalistas | não melhorou (71% × 71%): descartada |
 | Questões em que o Jev muda de resposta / não confirma o tema | ~55% / ~45% de acerto: não são publicadas |
 
 **Qual IA revisa melhor por real gasto.** Testei quatro LLMs como revisor, e comitês deles, na mesma tarefa e com a
@@ -55,15 +55,15 @@ custo por semana considera 50 mil questões, com o dólar a R$ 5,20.
 
 | Revisor | R$ por semana | Acerto sozinho | Acerto quando concorda com o Jev | Publicadas |
 |---|---|---|---|---|
-| (nenhum: só Jev) | — | 72% | — | 111 |
+| (nenhum: só Jev) | — | 71% | — | 111 |
 | **GPT-6 Luna** | **R$ 50** | 74% | 83% | **115** |
-| Claude Haiku 5.5 | R$ 103 | 73% | 87% | 114 |
-| GPT-6.1 Sol | R$ 551 | 79% | 91% | 115 |
+| Claude Haiku 5.5 | R$ 106 | 73% | 87% | 111 |
+| GPT-6.1 Sol | R$ 551 | 78% | 91% | 115 |
 | Claude Sonnet 5.5 | R$ 965 | 77% | 86% | 115 |
-| Comitês (Sol + Sonnet; os 4 LLMs) | R$ 1.500 a 1.700 | — | 93% a 94% | 104 a 110 |
+| Comitês (Sol + Sonnet; os 4 LLMs) | R$ 1.500 a 1.700 | — | 93% | 104 a 110 |
 
 O Luna dá o mesmo ganho dos modelos caros por uma fração do preço. **Mesmo quando os cinco modelos (o Jev e os quatro
-LLMs) concordam, o acerto fica em ~94%**: somar modelos não basta para publicar o resto com 95%.
+LLMs) concordam, o acerto fica em ~93%**: somar modelos não basta para publicar o resto com 95%.
 
 **6. Becos sem saída.**
 - **Desenhos com vários LLMs gerando o tesauro e rotulando:** troquei por conhecimento curado e um modelo de decisão.
@@ -74,13 +74,19 @@ LLMs) concordam, o acerto fica em ~94%**: somar modelos não basta para publicar
 - **Assumir que a equipe usou os temas antigos:** daria 50%, mas só fica acima de 95% se pelo menos 97% dessas questões
   estiverem mesmo neles.
 - **Notas de fronteira em lote:** as hesitações estão espalhadas por 58 pares, quase todos com uma questão só.
+- **Descartar sempre o campo `comando`** (às vezes ele é sintético): escondia o item de 3 questões Certo/Errado. Uma
+  delas estava publicada em "Homicídio", mas o item cobra concurso de pessoas. Agora o comando entra quando traz o item.
 
 ## b) Diagnóstico
 
 **Dados.**
 - **Formato:** 255 questões de cinco alternativas, 46 de quatro, 58 de certo/errado.
 - **Enunciados genéricos:** 67 ("assinale a correta").
-- **Disciplina de origem estranha ao recorte:** 8, incluindo uma de Direito Tributário sobre ITCMD, a única "fora".
+- **Disciplina de origem estranha ao recorte:** 8, incluindo uma de Direito Tributário sobre ITCMD (fora).
+- **Item no lugar errado:** em 3 questões Certo/Errado, o item a julgar está no campo `comando`, e o enunciado só diz
+  "julgue o próximo item".
+- **Leis sem tema na árvore:** 2 questões (Lei 9.029/95, discriminação de gestante no trabalho; Lei 14.597/2023, Lei
+  Geral do Esporte), que vão para fora.
 - **Assunto de origem:** vazio em 18 e certo só em cerca de metade das demais.
 
 **Árvore.** Temas repetidos, partes sem recorte, temas genéricos e erros de digitação ("Estaturo", "Comeptência").
@@ -95,22 +101,24 @@ LLMs) concordam, o acerto fica em ~94%**: somar modelos não basta para publicar
 4. **Temas repetidos e fatiados:** o conteúdo está certo e o endereço é incerto.
 5. **Temas genéricos.**
 
-**Por que 243 não foram publicadas.**
+**Por que 241 não foram publicadas.**
 - 90 caem em temas repetidos ou partes: os cinco modelos concordam no conteúdo de 77 delas, falta só o endereço;
-- 87 têm confiança baixa;
-- 66 dispararam um alarme do Jev.
+- 88 têm confiança baixa;
+- 63 dispararam um alarme do Jev ou do revisor.
 
 ## c) Produção (50 mil questões por semana): zero revisão item a item
 
 O professor é escasso, então **nenhuma questão espera por ele**. Cada questão segue este caminho:
-1. Importação e limpeza: duplicatas detectadas por embeddings herdam o tema já validado.
+1. Importação e limpeza: duplicatas detectadas por embeddings herdam o tema já validado; o item de Certo/Errado que
+   vem no campo `comando` entra no texto.
 2. Evidências do tesauro.
 3. Jev.
 4. Revisor LLM (GPT-6 Luna), que dá sugestão e justificativa.
 5. Triangulação e política.
 6. Desfecho:
    - **publicar**, quando passa a régua de 95%;
-   - **fora**, quando nenhum tema serve;
+   - **fora**, quando nenhum tema serve: a questão não é penal, ou cita uma lei sem tema e o revisor confirma. No
+     segundo caso, vira um alerta de "tema faltando" para o professor;
    - **prática geral**, no lugar da fila do professor. A questão fica em simulados e listas mistas, onde o tema não
      importa, e é reavaliada toda semana com o tesauro e as convenções atualizados. Os **sinais dos alunos** também
      contam: o desempenho de quem domina cada tema e os reportes. Quando a evidência passa a régua, a questão é
@@ -119,8 +127,9 @@ O professor é escasso, então **nenhuma questão espera por ele**. Cada questã
 Reporte de aluno numa questão publicada a devolve à prática geral e reabre a análise.
 
 **Do professor: cerca de 1 hora por semana, qualquer que seja o volume, sem revisão item a item.**
-1. **Decisões que valem por centenas de questões**, tomadas uma vez: qual dos temas repetidos vale e o que entra em
-   cada "Parte". Aqui, essa decisão publica mais 66 questões.
+1. **Decisões que valem por centenas de questões**, tomadas uma vez: qual dos temas repetidos vale, o que entra em
+   cada "Parte" e quais temas criar quando chega um alerta de tema faltando. Aqui, a decisão sobre os repetidos
+   publica mais 66 questões.
 2. **Aprovar em lote** as sugestões do Jev para o tesauro.
 3. **Auditoria por amostra:** cerca de 50 publicadas por semana; em um mês, 200, o que mede a precisão com ±3 pontos.
 
@@ -166,27 +175,32 @@ refaz a triangulação sorteando as hipóteses do método.
 - Jev: US$ 0,67, incluindo os experimentos.
 - Luna na entrega: US$ 0,07.
 - Pesquisa de modelos: US$ 2,75, incluindo as tentativas com Gemini e DeepSeek, que falharam.
+- Uma rodada com erro no texto, descartada: US$ 0,66.
 
 ## d) Memo para o professor
 
 **Professor,**
 
 Classificamos as 359 questões de Penal, Processo Penal, Legislação Especial e Criminologia. **115 podem ir direto ao
-aluno**, com acerto previsto de 96%. **Uma não é de Direito Penal** (isenção de ITCMD). As outras **243 não pedem
-revisão do senhor uma a uma**: ficam na prática geral (simulados e listas mistas) com a sugestão de tema e a
-justificativa do revisor automático, e são publicadas sozinhas quando a evidência for suficiente.
+aluno**, com acerto previsto de 96%. **Três ficam fora**: uma não é de Direito Penal (isenção de ITCMD) e duas tratam
+de leis que não têm tema na árvore. As outras **241 não pedem revisão do senhor uma a uma**: ficam na prática geral
+(simulados e listas mistas) com a sugestão de tema e a justificativa do revisor automático, e são publicadas sozinhas
+quando a evidência for suficiente.
 
 **O que encontramos.** A maior parte das dúvidas vem da lista de temas.
 - Há temas **repetidos** em dois lugares, como "Lei Maria da Penha" em Legislação Especial e em Penal.
 - Há temas **fatiados** em "Parte 1" e "Parte 2" sem recorte.
 - Há temas **genéricos** que atraíram questões que não eram deles.
 - O **assunto que veio do site de origem** acerta só cerca de metade das vezes.
+- **Faltam temas** para algumas leis cobradas em prova.
 
 **O que recomendamos mudar nos temas.**
 1. Um único endereço por assunto.
 2. Dizer o que cobre cada "Parte", ou juntá-las ao tema original.
 3. Uma frase de escopo em cada tema genérico.
 4. Corrigir os erros de digitação.
+5. Criar temas para as leis que não têm lugar na árvore, começando pela Lei 9.029/95 (discriminação no trabalho) e
+   pela Lei Geral do Esporte (Lei 14.597/2023).
 
 **Do que precisamos do senhor: cerca de 1 hora por semana, nunca questão por questão.**
 1. **Uma decisão, uma vez:** quais dos temas repetidos valem. Isso publica sozinho mais 66 questões agora (cobertura

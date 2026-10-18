@@ -5,8 +5,8 @@ cobertura_intervalo: 0.27-0.37
 
 Como cheguei nesses números
 
-Cobertura. Publicamos 115 das 359 questões (32.0%); 243 ficam em "revisar" (em produção:
-prática geral, reavaliadas automaticamente, sem esperar o professor) e 1 fica fora.
+Cobertura. Publicamos 115 das 359 questões (32.0%); 241 ficam em "revisar" (em produção:
+prática geral, reavaliadas automaticamente, sem esperar o professor) e 3 ficam fora.
 Se a avaliação usar as 359, a cobertura é exatamente essa; o intervalo (90%, binomial) cobre o caso de a
 avaliação usar só um subconjunto (~240 questões).
 
@@ -16,8 +16,8 @@ achados no texto) e o assunto que o site de origem deu à questão. Nenhuma das 
 diferentes; a frequência com que cada par concorda revela a taxa de acerto de cada uma (método das três
 testemunhas, Dawid & Skene, 1979). Nas 158 questões em que as duas testemunhas votam:
 
-- concordância Jev × tesauro 74%, Jev × origem 41%, tesauro × origem 45%;
-- taxa de acerto estimada: Jev 82% (90%: 76%–87%), tesauro 90%, assunto de origem 49%.
+- concordância Jev × tesauro 73%, Jev × origem 41%, tesauro × origem 45%;
+- taxa de acerto estimada: Jev 81% (90%: 76%–87%), tesauro 90%, assunto de origem 49%.
 
 A mesma conta, feita por faixa de probabilidade do Jev, calibra a confiança dele, separadamente para quando
 o revisor LLM concorda e quando discorda (os dois erram juntos com frequência, então o voto do revisor não é
@@ -27,11 +27,11 @@ de a convenção bater quando o tema existe em mais de um lugar da árvore. Publ
 confiança média ≥ 96% e piso de 0.85 por questão (limiar 0.88).
 
 - Precisão esperada das publicadas: 96.1% (média das confianças).
-- Só pelas probabilidades do Jev, sem triangulação, seria 92.7%.
+- Só pelas probabilidades do Jev, sem triangulação, seria 92.3%.
 - Intervalo de 90%: bootstrap de 1000 reamostras das questões, refazendo a triangulação e
   sorteando as hipóteses do método: κ entre 0.05 e 0.15, o peso do voto do tesauro
   (ρ entre 0.3 e 1.0) e o teto de confiança por questão (entre 95% e 99%: o erro
-  que nenhuma testemunha enxerga, como a convenção da equipe ou ruído no gabarito): 93.3%–97.3%.
+  que nenhuma testemunha enxerga, como a convenção da equipe ou ruído no gabarito): 93.2%–97.2%.
 
 Riscos que podem nos tirar do intervalo: (1) as testemunhas não são totalmente independentes (o Jev e o
 tesauro leem o mesmo texto; se uma citação de lei engana os dois, a concordância superestima o acerto);

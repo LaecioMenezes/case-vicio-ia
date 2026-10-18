@@ -124,6 +124,22 @@ def evidencias(texto):
     return ev
 
 
+@lru_cache(maxsize=1)
+def _diplomas_com_tema():
+    return {diploma_canonico(r.get("diploma")) for d in tesauro()["nos"].values() for r in d.get("refs_legais") or []}
+
+
+@lru_cache(maxsize=None)
+def leis_sem_tema(texto):
+    """Leis citadas na questão que não ancoram nenhum tema da árvore: ['Lei 9.029'] (candidatas a "fora")."""
+    out = []
+    for dip in sorted({dip for dip, _ in citacoes(texto)} - _diplomas_com_tema()):
+        m = re.fullmatch(r"(DL|L)(\d+)", dip or "")
+        if m:
+            out.append(("Decreto-Lei " if m.group(1) == "DL" else "Lei ") + f"{int(m.group(2)):,}".replace(",", "."))
+    return out
+
+
 def _dispositivos(d):
     return "; ".join(f"{r['diploma']} arts. {r['artigos']}" if r["artigos"] else r["diploma"]
                      for r in d.get("refs_legais") or [])

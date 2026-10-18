@@ -1,7 +1,9 @@
 """Etapa 7: política em código. Decide publicar, revisar ou fora para cada questão.
 
 1. fora: o Jev diz que a questão não é matéria penal (Noul < 0,2) e, além disso, não acha tema na
-   árvore ou o assunto de origem também diz que não é penal.
+   árvore ou o assunto de origem também diz que não é penal; ou a questão cita uma lei que não ancora
+   nenhum tema da árvore e o revisor também não acha tema (ex.: Lei 9.029/95). Nesse segundo caso, a
+   confiança do fora é 1 − P do tema mais provável do Jev.
 2. tema proposto: o conceito N1 mais provável do Jev (média das duas ordens). Desce ao subtema só se o
    Jev tiver P(subtema) ≥ 0,9 nas duas ordens E o tesauro ou o assunto de origem apontarem o mesmo
    subtema; senão publica no tema, que a regra do case aceita (o aluno do tema vê os subtemas). Nunca
@@ -69,6 +71,14 @@ def propor(dados, convencao, params=None):
                                f"da árvore serve" + ("; o assunto de origem confirma" if e["O"] == "FORA" else ""))
             out.append(prop)
             continue
+        r = (dados.get("rev") or {}).get(qid)
+        leis = thesaurus.leis_sem_tema(q["texto"]) if pol.get("fora_lei_sem_tema") else []
+        if leis and r and r["tema"] == NENHUM:
+            prop.update(decisao="fora", central="", conf=round(1 - p1.get(k1, 0.0), 3),
+                        motivo=f"cita {', '.join(leis)}, que não tem tema na árvore, e o revisor também não achou "
+                               f"tema; sugestão: criar o tema")
+            out.append(prop)
+            continue
 
         base = por_key[k1]["base"]
         central, s = base, None
@@ -82,7 +92,6 @@ def propor(dados, convencao, params=None):
             if filhos[s] >= pol["subtema_p_min"] and n2["consistente"] and apoio and not lixo_s:
                 central, prop["nivel"] = s, "subtema"
                 fator_sub = filhos[s] + n2["p"].get("__geral__", 0)
-        r = (dados.get("rev") or {}).get(qid)
         grupo = None
         if r:
             grupo = "concorda" if r["tema"] == k1 else "discorda"

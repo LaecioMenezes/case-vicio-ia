@@ -7,7 +7,8 @@
     "verif_min": 0.5,
     "lixeira_geral_ok_min": 0.7,
     "mista_noul_min": 0.7,
-    "segunda_rodada": false
+    "segunda_rodada": false,
+    "fora_lei_sem_tema": true
   },
   "triangulacao": {
     "kappa": 0.1,

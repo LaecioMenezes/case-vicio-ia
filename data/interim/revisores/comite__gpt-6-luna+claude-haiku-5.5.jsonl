@@ -104,7 +104,7 @@
 {"id": "Q0104", "tema": "Inquérito Policial", "confianca": "alta", "justificativa": "comitê: Inquérito Policial | Inquérito Policial", "custo": 0.00031237500000000004}
 {"id": "Q0105", "tema": "Nenhum destes temas", "confianca": "baixa", "justificativa": "comitê: Teorias Sociológicas Explicativas da Criminalidade | Etapas Evolutivas e Escolas Criminológicas", "custo": 0.00048392499999999996}
 {"id": "Q0106", "tema": "Dos Crimes Contra o Patrimônio", "confianca": "alta", "justificativa": "comitê: Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio", "custo": 0.000431075}
-{"id": "Q0107", "tema": "Nenhum destes temas", "confianca": "media", "justificativa": "comitê: Nenhum destes temas | Nenhum destes temas", "custo": 0.00028745}
+{"id": "Q0107", "tema": "Dos Crimes Contra a Fé Pública e de Falsidade Documental", "confianca": "alta", "justificativa": "comitê: Dos Crimes Contra a Fé Pública e de Falsidade Documental | Dos Crimes Contra a Fé Pública e de Falsidade Documental", "custo": 0.0016711450000000002}
 {"id": "Q0108", "tema": "Nenhum destes temas", "confianca": "baixa", "justificativa": "comitê: Recursos em Espécies | Parte Geral dos Recursos", "custo": 0.0009120249999999999}
 {"id": "Q0109", "tema": "Tráfico de Drogas (Direito Penal - Legislação Especial ou Penal)", "confianca": "alta", "justificativa": "comitê: Tráfico de Drogas (Direito Penal - Legislação Especial ou Penal) | Tráfico de Drogas (Direito Penal - Legislação Especial ou Penal)", "custo": 0.000455925}
 {"id": "Q0110", "tema": "Competência", "confianca": "media", "justificativa": "comitê: Competência | Competência", "custo": 0.00081}
@@ -205,7 +205,7 @@
 {"id": "Q0205", "tema": "Recursos em Espécies", "confianca": "media", "justificativa": "comitê: Recursos em Espécies | Recursos em Espécies", "custo": 0.000591475}
 {"id": "Q0206", "tema": "Sujeitos do Processo", "confianca": "alta", "justificativa": "comitê: Sujeitos do Processo | Sujeitos do Processo", "custo": 0.000290775}
 {"id": "Q0207", "tema": "Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal)", "confianca": "alta", "justificativa": "comitê: Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal) | Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal)", "custo": 0.00035032499999999996}
-{"id": "Q0208", "tema": "Dos Crimes Contra a Vida", "confianca": "media", "justificativa": "comitê: Dos Crimes Contra a Vida | Dos Crimes Contra a Vida", "custo": 0.0005304}
+{"id": "Q0208", "tema": "Concurso de Pessoas", "confianca": "media", "justificativa": "comitê: Concurso de Pessoas | Concurso de Pessoas", "custo": 0.00161172}
 {"id": "Q0209", "tema": "Nenhum destes temas", "confianca": "baixa", "justificativa": "comitê: Inquérito Policial | Sistemas e Princípios Processuais Penais", "custo": 0.0004368}
 {"id": "Q0210", "tema": "Estatuto do Desarmamento", "confianca": "media", "justificativa": "comitê: Estatuto do Desarmamento | Estatuto do Desarmamento", "custo": 0.00087625}
 {"id": "Q0211", "tema": "Nenhum destes temas", "confianca": "baixa", "justificativa": "comitê: Sujeitos do Processo | Comunicação dos Atos Processuais", "custo": 0.001136575}
@@ -232,7 +232,7 @@
 {"id": "Q0232", "tema": "Dos Crimes Contra a Administração Judicial", "confianca": "alta", "justificativa": "comitê: Dos Crimes Contra a Administração Judicial | Dos Crimes Contra a Administração Judicial", "custo": 0.000334375}
 {"id": "Q0233", "tema": "Iter Criminis", "confianca": "alta", "justificativa": "comitê: Iter Criminis | Iter Criminis", "custo": 0.000333525}
 {"id": "Q0234", "tema": "Teoria Geral da Criminologia", "confianca": "alta", "justificativa": "comitê: Teoria Geral da Criminologia | Teoria Geral da Criminologia", "custo": 0.000433825}
-{"id": "Q0235", "tema": "Nenhum destes temas", "confianca": "baixa", "justificativa": "comitê: Recursos em Espécies | Nulidades", "custo": 0.00029002499999999996}
+{"id": "Q0235", "tema": "Recursos em Espécies", "confianca": "alta", "justificativa": "comitê: Recursos em Espécies | Recursos em Espécies", "custo": 0.00148452}
 {"id": "Q0236", "tema": "Das Questões e Processos Incidentes", "confianca": "media", "justificativa": "comitê: Das Questões e Processos Incidentes | Das Questões e Processos Incidentes", "custo": 0.0007029}
 {"id": "Q0237", "tema": "Iter Criminis", "confianca": "alta", "justificativa": "comitê: Iter Criminis | Iter Criminis", "custo": 0.0003593}
 {"id": "Q0238", "tema": "Prisões em Espécie", "confianca": "alta", "justificativa": "comitê: Prisões em Espécie | Prisões em Espécie", "custo": 0.00044315}

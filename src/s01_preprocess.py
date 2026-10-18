@@ -2,7 +2,9 @@
 
 Decisões (registradas no README):
 - O `comando` é descartado: em parte das questões ele foi gerado artificialmente
-  ("Explique o que é...", "Complete a frase...") e não acrescenta informação.
+  ("Explique o que é...", "Complete a frase...") e não acrescenta informação. Exceção: em Certo/Errado,
+  às vezes o próprio item a julgar está no comando e o enunciado só diz "julgue o próximo item"; aí o
+  comando entra no texto como ITEM (quando não é uma instrução nem uma pergunta).
 - Questões Certo/Errado: as alternativas "Certo"/"Errado" são omitidas (só ruído).
 - `assunto_origem` e `disciplina_origem` NÃO entram no texto; ficam como metadado
   separado, porque podem estar errados (LEIA-ME).
@@ -20,6 +22,8 @@ DISCIPLINAS_PENAIS = {"Processo Penal", "Direito Penal", "Penal", "Criminologia"
                       "Direito Penal - Legislação Especial", "Direito Processual Penal"}
 STEM_GENERICO = re.compile(r"^(assinale|marque|analise|considerando|sobre|acerca|"
                            r"com rela[çc][ãa]o|a respeito|no que|no tocante|é correto|julgue)", re.I)
+INSTRUCAO = re.compile(r"\b(julgue|assinale|marque|analise|indique|explique|complete|identifique|avalie|determine|"
+                       r"descreva|classifique|responda|aponte|defina|informe|verifique)\b", re.I)
 
 
 def clean(s):
@@ -37,8 +41,18 @@ def clean(s):
     return s.strip()
 
 
+def item_do_comando(row):
+    """Certo/Errado com o item a julgar no comando (ex.: Q0107, cujo enunciado é só "julgue o próximo item")."""
+    c = clean(row.comando)
+    if row.tipo == "certo_errado" and len(c) >= 20 and not INSTRUCAO.search(c) and not c.endswith("?"):
+        return c
+    return ""
+
+
 def montar_texto(row):
     partes = [f"ENUNCIADO:\n{row.enunciado}"]
+    if row["item_comando"]:
+        partes.append(f"ITEM:\n{row['item_comando']}")
     if row.alternativas and row.tipo != "certo_errado":
         partes.append("ALTERNATIVAS:\n" + "\n".join(f"{k}) {v}" for k, v in row.alternativas.items()))
     return "\n".join(partes)
@@ -50,6 +64,7 @@ def main():
     df["alternativas"] = df["alternativas"].map(lambda a: {k: clean(v) for k, v in (a or {}).items()})
     df["tipo"] = df["alternativas"].map(
         lambda a: "certo_errado" if set(a) == {"C", "E"} else f"multipla_{len(a)}")
+    df["item_comando"] = df.apply(item_do_comando, axis=1)
     df["texto"] = df.apply(montar_texto, axis=1)
     df["enunciado_generico"] = df["enunciado"].map(
         lambda e: (len(e) < 90 and bool(STEM_GENERICO.match(e))) or len(e) < 40)
@@ -67,6 +82,7 @@ def main():
     print(f"{len(df)} questões -> data/interim/questoes_limpas.jsonl")
     print("tipos:", df["tipo"].value_counts().to_dict())
     print("enunciado genérico (conteúdo nas alternativas):", int(df["enunciado_generico"].sum()))
+    print("Certo/Errado com o item no comando:", ", ".join(df.loc[df["item_comando"] != "", "id"]))
     print("disciplina de origem suspeita:", int(df["disciplina_suspeita"].sum()))
     print("duplicatas reais (enunciado+alternativas):", int(df["duplicada"].sum()))
 

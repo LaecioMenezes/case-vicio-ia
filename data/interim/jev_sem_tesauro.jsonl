@@ -104,7 +104,7 @@
 {"id": "Q0104", "no": "5498", "p": 0.665, "consistente": true}
 {"id": "Q0105", "no": "4385", "p": 0.745, "consistente": true}
 {"id": "Q0106", "no": "5218", "p": 0.35, "consistente": false}
-{"id": "Q0107", "no": null, "p": 0.93, "consistente": true}
+{"id": "Q0107", "no": "5087", "p": 0.27, "consistente": false}
 {"id": "Q0108", "no": "5560", "p": 0.5700000000000001, "consistente": true}
 {"id": "Q0109", "no": "4708", "p": 0.865, "consistente": true}
 {"id": "Q0110", "no": "5480", "p": 0.615, "consistente": true}
@@ -205,7 +205,7 @@
 {"id": "Q0205", "no": "5560", "p": 0.53, "consistente": true}
 {"id": "Q0206", "no": "5583", "p": 0.8600000000000001, "consistente": true}
 {"id": "Q0207", "no": "6734", "p": 0.5700000000000001, "consistente": false}
-{"id": "Q0208", "no": "5149", "p": 0.815, "consistente": true}
+{"id": "Q0208", "no": "5071", "p": 0.96, "consistente": true}
 {"id": "Q0209", "no": "5580", "p": 0.7, "consistente": true}
 {"id": "Q0210", "no": "4697", "p": 1.0, "consistente": true}
 {"id": "Q0211", "no": "5580", "p": 0.5349999999999999, "consistente": true}
@@ -232,7 +232,7 @@
 {"id": "Q0232", "no": "5079", "p": 1.0, "consistente": true}
 {"id": "Q0233", "no": "5175", "p": 0.995, "consistente": true}
 {"id": "Q0234", "no": "4380", "p": 0.855, "consistente": true}
-{"id": "Q0235", "no": "5560", "p": 0.325, "consistente": false}
+{"id": "Q0235", "no": "5512", "p": 0.33, "consistente": false}
 {"id": "Q0236", "no": "5490", "p": 0.5, "consistente": true}
 {"id": "Q0237", "no": "5175", "p": 1.0, "consistente": true}
 {"id": "Q0238", "no": "5584", "p": 0.39, "consistente": true}

@@ -43,6 +43,7 @@ FRASES_GENERICAS = ("assinale", "alternativa", "correto afirmar", "incorreto afi
                     "constituição", "código", "processual penal", "direito penal", "penal brasileiro", "crimes contra",
                     "crime contra", "crime de", "tenha sido", "diz respeito", "acordo com", "previsto no", "artigo",
                     "jurisprudência", "defensoria", "delegacia", "seguida", "responderá", "condenado por", "item",
+                    "conduta do agente",
                     "correta", "qualquer")
 TOKEN = re.compile(r"[a-záàâãéêíóôõúüç]+(?:-[a-záàâãéêíóôõúüç]+)*")
 INSTR_TERMO = ("Which syllabus topic does this Portuguese legal term typically indicate when it appears in Brazilian "

@@ -1,22 +1,22 @@
 {
  "conservador": {
   "publicar": 115,
-  "revisar": 243,
-  "fora": 1,
+  "revisar": 241,
+  "fora": 3,
   "cobertura": 0.3203342618384401,
-  "precisao_esperada": 0.9612086956521739,
+  "precisao_esperada": 0.9610086956521738,
   "em_familia": 5,
-  "subtema": 46,
-  "tau": 0.878
+  "subtema": 45,
+  "tau": 0.879
  },
  "nos_antigos": {
   "publicar": 181,
-  "revisar": 177,
-  "fora": 1,
+  "revisar": 175,
+  "fora": 3,
   "cobertura": 0.5041782729805014,
-  "precisao_esperada": 0.9605856353591159,
+  "precisao_esperada": 0.9604475138121548,
   "em_familia": 5,
-  "subtema": 63,
+  "subtema": 62,
   "tau": 0.877
  }
 }
