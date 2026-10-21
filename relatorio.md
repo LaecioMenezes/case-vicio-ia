@@ -1,217 +1,137 @@
-# Relatório: classificação de questões por tema (Case de IA · Método VDE)
+# Relatório, etapa 2: classificação com um tesauro, sem LLM na decisão
 
-**Em cinco linhas.** Tratei o case como um problema de **vocabulário**: a árvore tem temas repetidos, temas fatiados em
-"Partes", temas genéricos que viraram lixeira e descrições vazias. A biblioteconomia resolve isso com um **tesauro**
-(vocabulário controlado, ISO 25964). O **Jev** (TypeSafe) lê cada questão e decide entre os conceitos do tesauro, com
-probabilidades; um LLM barato (**GPT-6 Luna**) faz a revisão automática. Publicamos **121 das 359 questões (34%)**, com
-**95,6% de acerto previsto (faixa de 92% a 97%)**, na régua de 95% do case, sem folga. O desenho **não depende de
-revisão questão a questão pelo professor**. Com uma única decisão de cadastro sobre os temas repetidos, a cobertura vai a
-**53%**. Custo total desta entrega: ~US$ 4,15.
+Nas 559 questões avaliadas, o sistema publica **278 (49,7%)**, com **96,4% de acerto previsto (faixa de 95% a 99%)**.
+Mandamos 270 para revisar e 11 para fora. **Nenhum modelo de linguagem é chamado na decisão:** `src/run_all.py`
+bloqueia a rede e regenera tudo em ~1 minuto.
 
-## a) Como pensei
+## a) O sistema
 
-**1. O problema é de vocabulário.** A árvore tem:
-- 20 temas novos sem descrição (IDs 6716 a 6738);
-- 8 pares de temas repetidos em dois ramos (ex.: "Lei Maria da Penha" em Legislação Especial e em Penal);
-- 6 temas fatiados em "(Parte N)" ao lado do tema original;
-- 17 temas genéricos e descrições do tipo "Subtema de X. N questões no source".
-
-Pela regra do case, publicar no gêmeo ou na parte errada é erro. Um modelo melhor não resolve isso; um vocabulário
-controlado resolve. Daí o tesauro.
-
-**2. O tesauro.** Cada um dos 375 temas virou uma ficha (`tesauro/tesauro_curado.txt`): os dispositivos legais que o
-ancoram (ex.: Peculato, CP arts. 312-313), os termos com que ele aparece nas questões e, onde o título não basta, uma
-nota de escopo. O código monta as famílias de nós concorrentes (gêmeos, partes, homógrafos como Ação Penal no CP e no
-CPP, sobreposições entre ramos) e os **89 conceitos** que o Jev vê, com gêmeos e partes unidos ao tema original. O Jev
-ajuda a manter o tesauro: propôs 69 termos tirados das questões, marcou 135 termos curados como duvidosos e apontou 58
-pares de temas que se confundem.
-
-**3. O Jev e as fraquezas dele.** O Jev escolhe entre opções e dá a probabilidade de cada uma (US$ 0,042 por milhão
-de tokens). Ele lê ao pé da letra, funciona melhor em inglês e tende a escolher a primeira opção. O desenho responde a
-isso:
-- critério de cada opção vindo do tesauro, com nota de escopo em inglês;
-- gêmeos unidos num conceito só;
-- duas ordens para cada escolha;
-- uma pergunta de verificação.
-
-**4. Medir sem gabarito.** Usei a **triangulação** entre três testemunhas que erram por motivos diferentes: o Jev, o
-tesauro (lei e termos citados) e o assunto que o site de origem deu à questão. A frequência com que cada par concorda
-revela a taxa de acerto de cada uma (Dawid & Skene, 1979). O mesmo cálculo, por faixa de probabilidade, calibra a
-confiança do Jev. Os termos propostos pelo Jev não votam, e o revisor LLM não é somado como testemunha independente,
-porque erra junto com o Jev. Medimos direto quanto acerta cada caso: "revisor concorda" e "revisor discorda".
-
-**5. O que testei.**
-
-| Teste | Resultado |
+| Peça | O que faz e por quê |
 |---|---|
-| Jev **sem** tesauro × **com** tesauro | acerto 67% × 71% (diferença pequena); respostas estáveis 79% × **88%** |
-| Tesauro sozinho | ~90% de acerto quando se manifesta, mas só se manifesta em 177 das 359 |
-| Voto vindo só da lei citada | ~52%: o artigo citado costuma ser o do crime da história, não o da pergunta |
-| Segunda rodada do Jev, só com os 5 finalistas | não melhorou (71% × 71%): descartada |
-| Questões em que o Jev muda de resposta / não confirma o tema | ~55% / ~45% de acerto: não são publicadas |
+| **Limpeza** (`s01`) | Tira o HTML. Em Certo/Errado, inclui o item que vem no `comando`; em 3 questões, ele só existia ali |
+| **Árvore** (`s02`) | Marca lixeiras, "(Parte N)", temas repetidos e nós novos sem descrição |
+| **Tesauro** (`s03`, `tesauro/`) | Uma ficha por tema (ISO 25964). Ver detalhe abaixo da tabela. É o conhecimento do sistema |
+| **Embeddings** (`prep_embeddings`) | qwen3-embedding-8b das questões, das fichas e dos exemplos, gravados em `artefatos/embeddings.npz` |
+| **Ranqueador** (`s05`, `s06`) | Para cada questão e cada um dos 89 temas: similaridade com a ficha e com os exemplos. Regressão logística com 5 pesos |
+| **Calibração e regra** (`s07`) | Isotônica sobre a probabilidade do 1º tema (teto 0,98). Publica o maior grupo com precisão esperada ≥ 95%, sem nenhuma questão abaixo de 0,85. Fora só por regra forte |
 
-**Qual IA revisa melhor por real gasto.** Testei quatro LLMs como revisor, e comitês deles, na mesma tarefa e com a
-mesma régua de fora (o assunto de origem, corrigido pelo erro dele, nas questões em que o modelo indica um tema). O
-custo por semana considera 50 mil questões, com o dólar a R$ 5,20.
+**A ficha do tesauro tem:**
+- os termos curados (1.512) e as leis;
+- as famílias de temas repetidos e fatiados;
+- escopo, termos (2.222), leis (408) e exemplos de questão (2.098) propostos pelo GPT-6 Luna.
 
-| Revisor | R$ por semana | Acerto sozinho | Acerto quando concorda com o Jev | Publicadas |
-|---|---|---|---|---|
-| (nenhum: só Jev) | — | 71% | — | 116 |
-| **GPT-6 Luna** | **R$ 50** | 74% | 83% | **121** |
-| Claude Haiku 5.5 | R$ 106 | 73% | 87% | 120 |
-| GPT-6.1 Sol | R$ 551 | 78% | 91% | 115 |
-| Claude Sonnet 5.5 | R$ 965 | 77% | 86% | 115 |
-| Comitês (Sol + Sonnet; os 4 LLMs) | R$ 1.500 a 1.700 | — | 93% | 104 a 110 |
+**O LLM entrou só antes da decisão.** As propostas do Luna passaram por revisão automática:
+- regex das leis;
+- descarte de exemplos com 30%+ de 8-gramas iguais aos de uma questão real (8 descartados);
+- o curado à mão prevalece;
+- cada campo guarda a sua origem.
 
-O Luna dá o maior ganho, por uma fração do preço. **Mesmo quando os cinco modelos (o Jev e os quatro
-LLMs) concordam, o acerto fica em ~93%**: somar modelos não basta para publicar o resto com 95%.
+O Luna nunca viu as questões do case. Os 69 termos que o Jev aceitou na etapa 1 entraram como dado.
 
-**6. Becos sem saída.**
-- **Desenhos com vários LLMs gerando o tesauro e rotulando:** troquei por conhecimento curado e um modelo de decisão.
-- **Comitês de modelos fortes:** publicam menos, porque se abstêm quando discordam.
-- **O assunto de origem como rótulo:** acerta ~49% das vezes.
-- **As contagens "N questões no source" como ponto de partida:** estão infladas pelas lixeiras.
-- **Publicar na disciplina (raiz):** a regra aceitaria, mas recriaria a lixeira.
-- **Assumir que a equipe usou os temas antigos:** daria 53%, mas só fica acima de 95% se pelo menos 98% dessas questões
-  estiverem mesmo neles.
-- **Notas de fronteira em lote:** as hesitações estão espalhadas por 58 pares, quase todos com uma questão só.
-- **Descartar sempre o campo `comando`** (às vezes ele é sintético): escondia o item de 3 questões Certo/Errado. Uma
-  delas estava publicada em "Homicídio", mas o item cobra concurso de pessoas. Agora o comando entra quando traz o item.
+**Testado e descartado** (acerto do 1º tema, validação cruzada 10 × 5 na folha):
 
-## b) Diagnóstico
+| Variante | Acerto |
+|---|---|
+| Embedding só do título do tema (sem tesauro) | 67% |
+| Embedding da ficha do tesauro | 79% |
+| **+ exemplos do tesauro (escolhido)** | **79%, e 98% nos 40% mais confiantes** |
+| + léxico explícito, origem, disciplina ou kNN nos rótulos | 74–75%: pioram por sobreajuste; os termos já estão na ficha |
+| Calibração logística | nunca passava de 0,9: não publicava nada |
+| Etapa 1 (Jev decidindo) | proibida pela regra nova; está na tag `etapa-1` |
 
-**Dados.**
-- **Formato:** 255 questões de cinco alternativas, 46 de quatro, 58 de certo/errado.
-- **Enunciados genéricos:** 67 ("assinale a correta").
-- **Disciplina de origem estranha ao recorte:** 8, incluindo uma de Direito Tributário sobre ITCMD (fora).
-- **Item no lugar errado:** em 3 questões Certo/Errado, o item a julgar está no campo `comando`, e o enunciado só diz
-  "julgue o próximo item".
-- **Leis sem tema na árvore:** 2 questões (Lei 9.029/95, discriminação de gestante no trabalho; Lei 14.597/2023, Lei
-  Geral do Esporte), que vão para fora.
-- **Assunto de origem:** vazio em 18 e certo só em cerca de metade das demais.
+Escolhi a variante numa grade pequena na mesma validação cruzada. Esse viés de seleção leve está coberto pelo
+intervalo da previsão.
 
-**Árvore.** Temas repetidos, partes sem recorte, temas genéricos e erros de digitação ("Estaturo", "Comeptência").
+## b) Os 100 rótulos
 
-**O que é difícil, e por quê.**
-1. **Caso narrativo em que o crime citado não é o assunto.** Na Q0157, a pergunta é o prazo da prisão temporária, e
-   as palavras apontam "Saúde Pública".
-2. **"Assinale a correta" com alternativas de temas diferentes.**
-3. **Fronteiras do CPP.** Exemplos: suspeição do juiz entre "Sujeitos" e "Exceção de Suspeição"; direitos do ofendido
-   entre "Sujeitos" e "Declaração do Ofendido". Na conferência manual de 12 publicadas, 10 estavam claramente certas e
-   2 caíram nessas fronteiras.
-4. **Temas repetidos e fatiados:** o conteúdo está certo e o endereço é incerto.
-5. **Temas genéricos.**
+**Uso:**
+1. **Treino:** os 5 pesos.
+2. **Calibração:** a isotônica sobre as previsões fora da dobra.
+3. **Teste e previsão:** validação cruzada 10 × 5. Nenhuma questão é medida pelo modelo que a viu.
 
-**Por que 235 não foram publicadas.**
-- 95 caem em temas repetidos ou partes: os cinco modelos concordam no conteúdo de 81 delas, falta só o endereço;
-- 77 têm confiança baixa;
-- 63 dispararam um alarme do Jev ou do revisor.
+**O que mostraram:**
+- **Temas repetidos e partes:** a equipe usa o **nó original** em 21 de 22 casos. Publicamos sempre no nó-base.
+- **Fora da taxonomia:** **8%**, inclusive questões que parecem classificáveis. Publicar uma delas é erro, e é o
+  principal limite: o ranqueador dá a elas confiança menor (0,61 contra 0,77), mas não o bastante para separá-las.
+- **Extras e subtemas:** 39% têm extras, que também contam como acerto. O gabarito é subtema em 39%. Como publicar no
+  tema-pai conta como certo, publicamos no tema.
+- **Lexical e origem:** só o tesauro lexical acerta 78% das 55 em que se manifesta; o assunto de origem acerta 47%.
 
-## c) Produção (50 mil questões por semana): zero revisão item a item
+## c) Diagnóstico
 
-O professor é escasso, então **nenhuma questão espera por ele**. Cada questão segue este caminho:
-1. Importação e limpeza: duplicatas detectadas por embeddings herdam o tema já validado; o item de Certo/Errado que
-   vem no campo `comando` entra no texto.
-2. Evidências do tesauro.
-3. Jev.
-4. Revisor LLM (GPT-6 Luna), que dá sugestão e justificativa.
-5. Triangulação e política.
-6. Desfecho:
-   - **publicar**, quando passa a régua de 95%;
-   - **fora**, quando nenhum tema serve: a questão não é penal, ou cita uma lei sem tema e o revisor confirma. No
-     segundo caso, vira um alerta de "tema faltando" para o professor;
-   - **prática geral**, no lugar da fila do professor. A questão fica em simulados e listas mistas, onde o tema não
-     importa, e é reavaliada toda semana com o tesauro e as convenções atualizados. Os **sinais dos alunos** também
-     contam: o desempenho de quem domina cada tema e os reportes. Quando a evidência passa a régua, a questão é
-     publicada sozinha.
+**O que atrapalha:**
+- assunto de origem errado em metade dos casos;
+- item escondido no `comando`;
+- 10 questões de Direito Penal Militar, ramo inexistente na árvore (vão para fora);
+- leis sem tema (Lei 9.029/95, Lei Geral do Esporte);
+- temas repetidos, "Partes" sem recorte, lixeiras e 20 temas novos sem descrição.
 
-Reporte de aluno numa questão publicada a devolve à prática geral e reabre a análise.
+**O que o sistema ainda erra, e o que resolveria:**
 
-**Do professor: cerca de 1 hora por semana, qualquer que seja o volume, sem revisão item a item.**
-1. **Decisões que valem por centenas de questões**, tomadas uma vez: qual dos temas repetidos vale, o que entra em
-   cada "Parte" e quais temas criar quando chega um alerta de tema faltando. Aqui, a decisão sobre os repetidos
-   publica mais 69 questões.
-2. **Aprovar em lote** as sugestões do Jev para o tesauro.
-3. **Auditoria por amostra:** cerca de 50 publicadas por semana; em um mês, 200, o que mede a precisão com ±3 pontos.
+| Tipo de erro | O que resolveria |
+|---|---|
+| Questões "fora" que parecem classificáveis | Uma regra escrita da equipe para "fora" e mais exemplos |
+| "Assinale a correta" com temas misturados | Exemplos mistos no tesauro e o 2º tema como extra |
+| Caso narrativo em que o crime da história não é o assunto | Exemplos desse formato nas fichas |
+| Fronteiras finas do CPP | Notas "não confundir com" do professor |
 
-| Tipo de IA | Usaria? | Onde e por quê |
-|---|---|---|
-| **Jev** | Sim, em todas | Decisão de tema e alarmes |
-| **Tesauro** | Sim, em todas | O conhecimento: o Jev sugere, o professor aprova em lote |
-| **LLM revisor (GPT-6 Luna)** | Sim, em todas | Segunda opinião com justificativa; troca a sugestão do Jev quando é mais provável |
-| **Embeddings** | Sim, na importação | Duplicatas entre bancas herdam o tema validado |
-| **Classificador treinado** | Depois | Com milhares de questões auditadas: mais uma testemunha e atalho para os casos fáceis |
-| **Agentes** | Não | O fluxo é fixo e auditável |
-| **Revisão humana** | Mínima | Decisões de regra, aprovação em lote e amostra; nada item a item |
+A folha só tem questões antigas. As novas (Q0360+) publicam 54%, contra 45% das antigas, e esse é o maior risco para a
+previsão.
 
-**Custo, na conta.**
-- **Por questão:** Jev US$ 0,0009 + Luna US$ 0,0002 = **US$ 0,0011**.
-- **50.000 questões por semana:** **US$ 56**, ou **R$ 290 por semana** (~R$ 1.250 por mês), com o dólar a ~R$ 5,20.
-- **Professor:** custo fixo de ~1 hora por semana.
+## d) Produção (50 mil questões por semana)
 
-**Qualidade contínua.**
-1. A auditoria por amostra mede a precisão real.
-2. A triangulação semanal serve de alarme de deriva.
-3. Os reportes de alunos são acompanhados por tema.
-4. Um detector de lixeira avisa quando um tema genérico recebe volume anormal.
-5. A recalibração mensal ajusta o limiar para manter a precisão ≥ 95%.
+**Custo e tempo:**
+- **Embedding das questões novas:** ~US$ 0,30 por semana.
+- **Decisão:** ~70 ms por questão num núcleo de CPU, ~1 hora por semana, paralelizável, sem GPU.
+- **Refazer o tesauro inteiro:** ~US$ 0,30, quando a árvore muda.
 
-## Resultado e previsão
+**A correção do professor vira dado:**
+- a questão corrigida entra como **exemplo rotulado** na ficha do tema;
+- termos e "não confundir com" apontados entram no tesauro.
 
-| Cenário | Publicadas | Precisão prevista |
-|---|---|---|
-| **Entregue:** temas repetidos e partes aguardam a decisão de cadastro | 121 (34%) | 95,6% (92% a 97%) |
-| Depois da decisão de cadastro (tema original nos repetidos) | 190 (53%) | 95,6% |
+**Retreino:**
+- **Toda semana:** pesos e calibração, em segundos. Só entra em produção se a validação cruzada mantiver ≥ 95%.
+- **Todo mês:** auditoria por amostra.
+- **Reporte de aluno:** devolve a questão à revisão.
 
-A previsão (`previsao.txt`) é a média das confianças calibradas das publicadas; no cabeçalho do arquivo ela aparece
-como 0.96, porque o LEIA-ME pede duas casas. O intervalo vem de um bootstrap que refaz a triangulação sorteando as
-hipóteses do método.
+## Previsão
 
-**A régua, sem folga.** Publicamos o maior conjunto com precisão esperada ≥ 95%, a régua do case, e nenhuma questão
-com confiança abaixo de 0,85. Com 121 publicadas, a régua tolera até 6 erros. A chance de passar disso só pelo acaso é
-de ~28%, antes de somar a incerteza da calibração; com o alvo de 96%, seriam 115 publicadas e risco parecido (29%).
-Tirar também o piso daria 126 publicadas, mas com risco de 42%.
+- **Publicar:** 278 de 559 (49,7%; faixa de 44% a 55% se a avaliação usar só parte delas).
+- **Precisão esperada:** 96,4%, com faixa de 95% a 99% pelo bootstrap das 100 questões, que refaz calibração e limiar
+  e sorteia os acertos.
+- **Conferência direta:** o mesmo limiar, na validação cruzada, publica metade da folha com 97,5% de acerto.
 
-**Com mais tempo.**
-- Obter da equipe a decisão sobre os temas repetidos.
-- Escrever e aprovar as notas de fronteira.
-- Validar a triangulação com uma amostra pequena conferida por especialista.
-- Testar os sinais dos alunos para reclassificar as questões da prática geral.
+**Com mais tempo:**
+- regra de "fora" da equipe;
+- rótulos de questões novas;
+- revisão humana das fichas;
+- subtema quando a confiança for alta.
 
-**Custo da entrega:**
-- Jev: US$ 0,67, incluindo os experimentos.
-- Luna na entrega: US$ 0,07.
-- Pesquisa de modelos: US$ 2,75, incluindo as tentativas com Gemini e DeepSeek, que falharam.
-- Uma rodada com erro no texto, descartada: US$ 0,66.
+**Custo da etapa:** US$ 0,27.
 
-## d) Memo para o professor
+## e) Memo para o professor
 
 **Professor,**
 
-Classificamos as 359 questões de Penal, Processo Penal, Legislação Especial e Criminologia. **121 podem ir direto ao
-aluno**, com acerto previsto de 95,6% (a régua é 95%). **Três ficam fora**: uma não é de Direito Penal (isenção de ITCMD) e duas tratam
-de leis que não têm tema na árvore. As outras **235 não pedem revisão do senhor uma a uma**: ficam na prática geral
-(simulados e listas mistas) com a sugestão de tema e a justificativa do revisor automático, e são publicadas sozinhas
-quando a evidência for suficiente.
+Montamos um sistema que coloca as questões nos temas **sem usar IA na hora de decidir**. Ele compara cada questão com
+uma ficha por tema (o que o tema cobre, termos e leis típicas, exemplos) e aprende com as 100 questões que a equipe já
+classificou. Das 559 a avaliar, **278 vão direto ao aluno**, com acerto previsto de 96%. **11 ficam fora**: 10 de
+Direito Penal Militar, que não tem ramo na árvore, e 1 sobre a Lei Geral do Esporte. **270 vão para a sua revisão**
+com uma sugestão.
 
-**O que encontramos.** A maior parte das dúvidas vem da lista de temas.
-- Há temas **repetidos** em dois lugares, como "Lei Maria da Penha" em Legislação Especial e em Penal.
-- Há temas **fatiados** em "Parte 1" e "Parte 2" sem recorte.
-- Há temas **genéricos** que atraíram questões que não eram deles.
-- O **assunto que veio do site de origem** acerta só cerca de metade das vezes.
-- **Faltam temas** para algumas leis cobradas em prova.
+**O que encontramos:**
+- temas repetidos e fatiados em "Partes" (a equipe usa o tema original, e o sistema também);
+- temas genéricos que atraem questões alheias;
+- 8% de questões consideradas fora mesmo parecendo classificáveis;
+- o assunto do site de origem acerta só metade das vezes.
 
-**O que recomendamos mudar nos temas.**
-1. Um único endereço por assunto.
-2. Dizer o que cobre cada "Parte", ou juntá-las ao tema original.
-3. Uma frase de escopo em cada tema genérico.
-4. Corrigir os erros de digitação.
-5. Criar temas para as leis que não têm lugar na árvore, começando pela Lei 9.029/95 (discriminação no trabalho) e
-   pela Lei Geral do Esporte (Lei 14.597/2023).
+**O que recomendamos:**
+1. Um endereço por assunto, e as "Partes" juntadas ao tema original.
+2. Escopo escrito nos temas genéricos.
+3. Criar o ramo de Direito Penal Militar e temas para as leis que faltam.
+4. Escrever o critério de "fora".
 
-**Do que precisamos do senhor: cerca de 1 hora por semana, nunca questão por questão.**
-1. **Uma decisão, uma vez:** quais dos temas repetidos valem. Isso publica sozinho mais 69 questões agora (cobertura
-   de 34% para 53%) e todas as futuras desses temas.
-2. **Cerca de 30 minutos por semana** aprovando em lote as sugestões para o dicionário de temas
-   (`out/termos_propostos_jev.csv`, `out/tesauro_auditoria.csv`, `out/fronteiras_sugeridas.csv`).
-3. **Cerca de 30 minutos por semana** conferindo uma amostra das publicadas, para medirmos com números a régua de 95%.
+**Do que precisamos do senhor:**
+1. Corrigir as revisões: cada correção vira exemplo, e o sistema aprende na semana seguinte.
+2. Aprovar em lote as fichas dos temas (`out/revisao_tesauro.csv`).
+3. Conferir uma amostra das publicadas por mês.

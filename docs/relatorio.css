@@ -1,0 +1,8 @@
+@page { size: A4; margin: 16mm 15mm; }
+body { font-family: "Segoe UI", Arial, sans-serif; font-size: 10pt; line-height: 1.32; color: #1f2a37; max-width: none; margin: 0; }
+h1 { font-size: 15pt; margin: 0 0 6px; } h2 { font-size: 12pt; margin: 12px 0 4px; border-bottom: 1px solid #ddd; }
+table { border-collapse: collapse; width: 100%; margin: 4px 0; font-size: 8.8pt; } th, td { border: 1px solid #ccc; padding: 2px 5px; vertical-align: top; }
+th { background: #f2f4f7; } p, ul, ol { margin: 3px 0; } li { margin: 0; } code { font-size: 8.5pt; }
+header#title-block-header { display: none; }
+h2#e-memo-para-o-professor { page-break-before: always; }
+ul, ol { padding-left: 18px; }

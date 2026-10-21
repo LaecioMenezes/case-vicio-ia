@@ -124,6 +124,17 @@ def evidencias(texto):
     return ev
 
 
+def documento(no):
+    """Texto do tema para o embedding: caminho, escopo, termos (curados, do LLM revisados e do Jev) e leis."""
+    d = tesauro()["nos"][str(no)]
+    termos = list(dict.fromkeys((d.get("altLabel") or []) + (d.get("altLabel_llm") or []) + (d.get("altLabel_jev") or [])))
+    refs = "; ".join(f"{r['diploma']} {r.get('artigos') or ''}".strip()
+                     for r in (d.get("refs_legais") or []) + (d.get("refs_llm") or []))
+    partes = [d["caminho"] + ".", d.get("escopo") or "", f"Termos: {', '.join(termos)}." if termos else "",
+              f"Leis: {refs}." if refs else ""]
+    return " ".join(p for p in partes if p)
+
+
 @lru_cache(maxsize=1)
 def _diplomas_com_tema():
     return {diploma_canonico(r.get("diploma")) for d in tesauro()["nos"].values() for r in d.get("refs_legais") or []}

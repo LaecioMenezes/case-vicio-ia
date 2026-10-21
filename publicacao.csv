@@ -1,360 +1,660 @@
 id,decisao,tema_central_id,extras_ids,confianca,motivo
-Q0001,publicar,5524,,0.97,
-Q0002,revisar,4377,,0.38,confiança 0.38 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teorias Legitimidoras da Pena)
-Q0003,revisar,5560,,0.77,tema em mais de um lugar da árvore (Recursos em Espécies | Recursos (Parte 03) - Espécies); falta a convenção da equipe
-Q0004,revisar,5480,,0.78,tema em mais de um lugar da árvore (Competência | Competência (Parte 1) | Competência (Parte 2)); falta a convenção da equipe
-Q0005,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0006,revisar,5157,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
-Q0007,publicar,5064,,0.89,
-Q0008,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0009,revisar,5157,,0.77,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
-Q0010,revisar,4688,6717,0.49,tema em mais de um lugar da árvore (Crimes contra o meio ambiente | Crimes contra o meio ambiente); falta a convenção da equipe
-Q0011,revisar,4702,6723,0.37,confiança 0.37 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes)
-Q0012,revisar,5560,,0.00,o Jev muda de tema quando a ordem das opções muda
-Q0013,revisar,5480,,0.13,confiança 0.13 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Inquérito Policial); o tesauro aponta outro tema (Inquérito Policial)
-Q0014,revisar,5477,,0.53,o Jev não confirmou o tema na pergunta de verificação (P=0.43)
-Q0015,publicar,5498,,0.97,
-Q0016,revisar,5517,,0.33,confiança 0.33 abaixo do limiar 0.85
-Q0017,revisar,5466,,0.75,confiança 0.75 abaixo do limiar 0.85
-Q0018,revisar,4701,,0.10,confiança 0.10 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Competência); o tesauro aponta outro tema (Procedimento Sumaríssimo)
-Q0019,revisar,5475,,0.90,o Jev não confirmou o tema na pergunta de verificação (P=0.23)
-Q0020,revisar,5199,,0.16,o Jev não confirmou o tema na pergunta de verificação (P=0.30)
-Q0021,revisar,5583,,0.20,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação...
-Q0022,revisar,5087,,0.68,confiança 0.68 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes)
-Q0023,publicar,5524,,0.97,
-Q0024,publicar,4388,,0.97,
-Q0025,revisar,5087,,0.76,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0026,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
-Q0027,publicar,5487,,0.97,
-Q0028,publicar,5524,,0.95,
-Q0029,revisar,4684,6716,0.49,tema em mais de um lugar da árvore (Abuso de Autoridade | Abuso de Autoridade); falta a convenção da equipe
-Q0030,revisar,5134,,0.43,confiança 0.43 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Das Lesões Corporais)
-Q0031,publicar,4388,,0.97,
-Q0032,revisar,5498,,0.82,confiança 0.82 abaixo do limiar 0.85
-Q0033,publicar,5519,,0.97,
-Q0034,publicar,5477,,0.95,
-Q0035,publicar,4706,,0.97,
-Q0036,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
-Q0037,revisar,5132,,0.20,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.29)
-Q0038,publicar,5583,,0.95,
-Q0039,revisar,4694,,0.70,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.14)
-Q0040,revisar,5562,,0.43,confiança 0.43 abaixo do limiar 0.85
-Q0041,publicar,5184,,0.97,
-Q0042,publicar,5222,,0.97,
-Q0043,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0044,publicar,5487,,0.93,
-Q0045,revisar,5091,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0046,publicar,5509,,0.95,
-Q0047,revisar,5063,,0.64,confiança 0.64 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Das Lesões Corporais)
-Q0048,revisar,4703,6734,0.00,o Jev muda de tema quando a ordem das opções muda
-Q0049,revisar,5152,,0.01,confiança 0.01 abaixo do limiar 0.85
-Q0050,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0051,publicar,5182,,0.95,
-Q0052,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0053,revisar,4701,,0.29,confiança 0.29 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Procedimento Sumaríssimo); o tesauro aponta outro tema (Procedimento Sumaríssimo)
-Q0054,publicar,5174,,0.97,
-Q0055,revisar,5550,,0.72,confiança 0.72 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Comunicação dos Atos Processuais)
-Q0056,publicar,5066,,0.97,
-Q0057,publicar,5175,,0.97,
-Q0058,revisar,4377,,0.38,o Jev não confirmou o tema na pergunta de verificação (P=0.41)
-Q0059,revisar,4368,,0.01,o Jev muda de tema quando a ordem das opções muda
-Q0060,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0061,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0062,publicar,5182,,0.95,
-Q0063,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
-Q0064,revisar,4695,,0.16,confiança 0.16 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Punibilidade); o tesauro aponta outro tema (Introdução ao Estudo do Direito Penal)
-Q0065,revisar,5157,,0.35,confiança 0.35 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Das Lesões Corporais)
-Q0066,publicar,4373,,0.97,
-Q0067,revisar,5091,,0.77,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0068,revisar,5096,,0.06,o Jev não confirmou o tema na pergunta de verificação (P=0.25)
-Q0069,publicar,5173,,0.97,
-Q0070,revisar,4703,6734,0.42,confiança 0.42 abaixo do limiar 0.85
-Q0071,revisar,4688,6717,0.49,tema em mais de um lugar da árvore (Crimes contra o meio ambiente | Crimes contra o meio ambiente); falta a convenção da equipe
-Q0072,revisar,5590,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Inquérito Policial)
-Q0073,revisar,5087,,0.76,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0074,revisar,4703,6734,0.22,confiança 0.22 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teoria da Pena)
-Q0075,publicar,5191,,0.97,
-Q0076,revisar,4373,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teoria Geral da Criminologia)
-Q0077,revisar,5173,,0.71,as alternativas parecem cobrar temas diferentes (questão mista)
-Q0078,publicar,4697,,0.97,
-Q0079,publicar,5581,,0.97,
-Q0080,publicar,4370,,0.97,
-Q0081,publicar,4373,,0.97,
-Q0082,revisar,5087,,0.70,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0083,publicar,5149,,0.88,
-Q0084,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
-Q0085,revisar,5071,,0.16,confiança 0.16 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes); o tesauro aponta outro tema (Dos Crimes Contra a Administração Pública)
-Q0086,revisar,5092,,0.75,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0087,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0088,publicar,4389,,0.97,
-Q0089,revisar,5227,,0.48,confiança 0.48 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teoria do Crime: Ilicitude); o tesauro aponta outro tema (Introdução ao Estudo do Direito Penal)
-Q0090,revisar,5530,,0.20,o Jev não confirmou o tema na pergunta de verificação (P=0.28)
-Q0091,revisar,4703,6734,0.43,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0092,publicar,5509,,0.97,
-Q0093,revisar,5218,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes)
-Q0094,publicar,4388,,0.97,
-Q0095,revisar,5063,,0.18,o Jev não confirmou o tema na pergunta de verificação (P=0.39)
-Q0096,revisar,5486,,0.72,tema em mais de um lugar da árvore (Competência | Competência (Parte 1) | Competência (Parte 2)); falta a convenção da equipe
-Q0097,revisar,4708,6728,0.04,confiança 0.04 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes); o tesauro aponta outro tema (Lavagem de Dinheiro (Direito Penal - Legislação...
-Q0098,revisar,5548,,0.64,confiança 0.64 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0099,revisar,5087,,0.35,confiança 0.35 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Das Lesões Corporais)
-Q0100,publicar,5103,,0.95,
-Q0101,revisar,4704,6724,0.48,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
-Q0102,revisar,5572,,0.76,tema em mais de um lugar da árvore (Sentença Penal | Sentença Penal (Parte 1) | Sentença Penal (Parte 2)); falta a convenção da equipe
-Q0103,revisar,5478,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0104,publicar,5498,,0.97,
-Q0105,publicar,4388,,0.97,
-Q0106,revisar,5157,,0.78,o Jev muda de tema quando a ordem das opções muda
-Q0107,publicar,5116,,0.93,
-Q0108,revisar,5561,,0.64,confiança 0.64 abaixo do limiar 0.85
-Q0109,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0110,revisar,5480,,0.78,tema em mais de um lugar da árvore (Competência | Competência (Parte 1) | Competência (Parte 2)); falta a convenção da equipe
-Q0111,publicar,4373,,0.95,
-Q0112,revisar,4705,6725,0.49,tema em mais de um lugar da árvore (Organizações Criminosas | Organizações Criminosas); falta a convenção da equipe
-Q0113,publicar,5185,,0.87,
-Q0114,revisar,5505,,0.01,o Jev não confirmou o tema na pergunta de verificação (P=0.40)
-Q0115,publicar,4388,,0.95,
-Q0116,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0117,publicar,4384,,0.97,
-Q0118,publicar,5505,,0.87,
-Q0119,publicar,5180,,0.95,
-Q0120,revisar,5530,,0.20,o Jev muda de tema quando a ordem das opções muda
-Q0121,publicar,5466,,0.90,
-Q0122,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0123,revisar,4377,,0.20,confiança 0.20 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Criminologia no Estado Democrático de Direito); o tesauro aponta outro tema (Introdução ao Estudo...
-Q0124,publicar,4384,,0.97,
-Q0125,revisar,4703,6734,0.10,confiança 0.10 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teoria da Pena); o tesauro aponta outro tema (Tráfico de Drogas (Direito Penal - Legislação...
-Q0126,revisar,5218,,0.20,o Jev não confirmou o tema na pergunta de verificação (P=0.27); as alternativas parecem cobrar temas diferentes (questão mista)
-Q0127,revisar,5572,,0.47,confiança 0.47 abaixo do limiar 0.85
-Q0128,revisar,5466,,0.39,"o revisor trocou o tema, mas sem confiança alta"
-Q0129,revisar,5550,,0.64,o Jev não confirmou o tema na pergunta de verificação (P=0.32)
-Q0130,revisar,5205,,0.56,confiança 0.56 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes)
-Q0131,publicar,5072,,0.97,
-Q0132,revisar,5583,,0.01,o Jev não confirmou o tema na pergunta de verificação (P=0.23)
-Q0133,publicar,5528,,0.96,
-Q0134,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0135,revisar,5169,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
-Q0136,revisar,4704,6724,0.48,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
-Q0137,publicar,5500,,0.97,
-Q0138,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0139,publicar,5211,,0.97,
-Q0140,revisar,5157,,0.76,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
-Q0141,publicar,4388,,0.96,
-Q0142,fora,,,1.00,o Jev indica que a questão não é de matéria penal (P=0.01) e nenhum tema da árvore serve; o assunto de origem confirma
-Q0143,publicar,5505,,0.97,
-Q0144,revisar,5560,,0.47,confiança 0.47 abaixo do limiar 0.85
-Q0145,revisar,4702,6723,0.48,tema em mais de um lugar da árvore (Lavagem de Dinheiro | Lavagem de Dinheiro); falta a convenção da equipe
-Q0146,publicar,5590,,0.95,
-Q0147,publicar,5498,,0.97,
-Q0148,revisar,5203,,0.75,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0149,publicar,5500,,0.97,
-Q0150,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0151,publicar,5517,,0.97,
-Q0152,publicar,5472,,0.86,
-Q0153,revisar,5222,,0.35,o Jev não confirmou o tema na pergunta de verificação (P=0.47)
-Q0154,fora,,,0.45,"cita Lei 9.029, que não tem tema na árvore, e o revisor também não achou tema; sugestão: criar o tema"
-Q0155,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0156,revisar,4688,6717,0.37,confiança 0.37 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Punibilidade)
-Q0157,revisar,4693,,0.20,confiança 0.20 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Inquérito Policial); o tesauro aponta outro tema (Dos Crimes Contra a Saúde Pública e Dos Crimes...
-Q0158,publicar,4707,,0.96,
-Q0159,revisar,5157,,0.44,"o revisor trocou o tema, mas sem confiança alta"
-Q0160,revisar,5205,,0.77,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0161,revisar,5518,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Inquérito Policial)
-Q0162,revisar,4380,,0.82,o Jev muda de tema quando a ordem das opções muda
-Q0163,revisar,4684,6716,0.37,confiança 0.37 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes)
-Q0164,revisar,4703,6734,0.48,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0165,revisar,4705,6725,0.49,tema em mais de um lugar da árvore (Organizações Criminosas | Organizações Criminosas); falta a convenção da equipe
-Q0166,revisar,4703,6734,0.37,confiança 0.37 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teoria da Pena)
-Q0167,revisar,5528,,0.74,confiança 0.74 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Comunicação dos Atos Processuais)
-Q0168,fora,,,0.52,"cita Lei 14.597, que não tem tema na árvore, e o revisor também não achou tema; sugestão: criar o tema"
-Q0169,revisar,5583,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Das Questões e Processos Incidentes)
-Q0170,revisar,5199,,0.01,o Jev não confirmou o tema na pergunta de verificação (P=0.15)
-Q0171,revisar,4693,,0.00,o Jev não confirmou o tema na pergunta de verificação (P=0.21)
-Q0172,publicar,5466,,0.90,
-Q0173,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0174,revisar,5064,,0.07,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev não confirmou o tema na pergunta de verificação (P=0.17)
-Q0175,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0176,publicar,5081,,0.97,
-Q0177,revisar,5543,6735,0.75,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
-Q0178,publicar,4697,,0.97,
-Q0179,publicar,4369,,0.97,
-Q0180,revisar,5594,,0.81,confiança 0.81 abaixo do limiar 0.85
-Q0181,publicar,4695,,0.95,
-Q0182,revisar,5071,,0.20,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.24)
-Q0183,revisar,5560,,0.35,confiança 0.35 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0184,revisar,4708,6728,0.44,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0185,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0186,revisar,5202,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0187,revisar,5199,,0.74,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0188,publicar,5228,,0.93,
-Q0189,revisar,5472,,0.84,tema em mais de um lugar da árvore (Ação Penal | Ação Penal); falta a convenção da equipe
-Q0190,revisar,4701,,0.52,tema em mais de um lugar da árvore (Juizado Especial Criminal | Procedimento Sumaríssimo); falta a convenção da equipe
-Q0191,revisar,5560,,0.73,tema em mais de um lugar da árvore (Recursos em Espécies | Recursos (Parte 03) - Espécies); falta a convenção da equipe
-Q0192,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0193,revisar,4705,6725,0.48,tema em mais de um lugar da árvore (Organizações Criminosas | Organizações Criminosas); falta a convenção da equipe
-Q0194,revisar,5089,,0.77,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0195,publicar,4373,,0.97,
-Q0196,publicar,4388,,0.97,
-Q0197,publicar,5498,,0.97,
-Q0198,revisar,5071,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.34)
-Q0199,revisar,5218,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.34)
-Q0200,revisar,4705,6725,0.49,tema em mais de um lugar da árvore (Organizações Criminosas | Organizações Criminosas); falta a convenção da equipe
-Q0201,publicar,5103,,0.97,
-Q0202,revisar,5102,,0.41,o Jev muda de tema quando a ordem das opções muda
-Q0203,revisar,4702,6723,0.49,tema em mais de um lugar da árvore (Lavagem de Dinheiro | Lavagem de Dinheiro); falta a convenção da equipe
-Q0204,publicar,5507,,0.97,
-Q0205,revisar,5560,,0.30,o Jev muda de tema quando a ordem das opções muda
-Q0206,publicar,5583,,0.95,
-Q0207,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0208,publicar,5071,,0.87,
-Q0209,publicar,5498,,0.93,
-Q0210,publicar,4697,,0.97,
-Q0211,revisar,5583,,0.70,"o revisor trocou o tema, mas sem confiança alta"
-Q0212,publicar,5488,,0.97,
-Q0213,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0214,publicar,5490,,0.97,
-Q0215,revisar,5201,,0.77,o Jev muda de tema quando a ordem das opções muda
-Q0216,revisar,4701,,0.45,confiança 0.45 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0217,revisar,4384,,0.82,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação...
-Q0218,revisar,5518,,0.53,confiança 0.53 abaixo do limiar 0.85
-Q0219,publicar,5071,,0.97,
-Q0220,publicar,5501,,0.97,
-Q0221,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0222,revisar,4376,,0.69,confiança 0.69 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Penal))
-Q0223,revisar,5087,,0.16,confiança 0.16 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teoria do Crime: Fato Típico); o tesauro aponta outro tema (Dos Crimes Contra a Administração Judicial)
-Q0224,revisar,5203,,0.71,o Jev não confirmou o tema na pergunta de verificação (P=0.47)
-Q0225,revisar,5478,,0.38,confiança 0.38 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0226,revisar,5544,,0.82,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
-Q0227,publicar,5103,,0.97,
-Q0228,revisar,4703,6734,0.43,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0229,publicar,5517,,0.96,
-Q0230,revisar,5211,,0.38,o Jev não confirmou o tema na pergunta de verificação (P=0.36)
-Q0231,publicar,5224,,0.97,
-Q0232,publicar,5079,,0.97,
-Q0233,publicar,5178,,0.97,
-Q0234,publicar,4382,,0.88,
-Q0235,revisar,5560,,0.35,confiança 0.35 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Competência)
-Q0236,revisar,5490,,0.38,o Jev não confirmou o tema na pergunta de verificação (P=0.25)
-Q0237,publicar,5178,,0.97,
-Q0238,revisar,5523,,0.74,confiança 0.74 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0239,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0240,revisar,5473,,0.74,confiança 0.74 abaixo do limiar 0.85
-Q0241,publicar,5224,,0.97,
-Q0242,revisar,5512,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Sistemas e Princípios Processuais Penais)
-Q0243,revisar,5178,,0.87,o Jev muda de tema quando a ordem das opções muda
-Q0244,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0245,publicar,5185,,0.97,
-Q0246,publicar,5527,,0.96,
-Q0247,revisar,5191,,0.20,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.40)
-Q0248,revisar,5087,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0249,publicar,5583,,0.85,
-Q0250,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0251,publicar,5191,,0.97,
-Q0252,revisar,4703,6734,0.24,confiança 0.24 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal)); o tesauro aponta outro tema (Teoria da Pena)
-Q0253,publicar,4373,,0.95,
-Q0254,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
-Q0255,publicar,5213,,0.97,
-Q0256,revisar,5218,,0.82,o Jev não confirmou o tema na pergunta de verificação (P=0.43)
-Q0257,publicar,5218,,0.97,
-Q0258,revisar,5545,,0.81,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
-Q0259,revisar,5066,,0.07,confiança 0.07 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teoria do Crime: Ilicitude); o tesauro aponta outro tema (Dos Crimes Contra o Patrimônio)
-Q0260,revisar,4374,,0.70,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.26)
-Q0261,publicar,5136,,0.96,
-Q0262,revisar,4703,6734,0.37,confiança 0.37 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Medida de Segurança)
-Q0263,revisar,5583,,0.70,confiança 0.70 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Procedimento do Tribunal do Júri)
-Q0264,publicar,5102,,0.97,
-Q0265,revisar,5185,,0.43,confiança 0.43 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Punibilidade)
-Q0266,revisar,5482,,0.70,tema em mais de um lugar da árvore (Competência | Competência (Parte 1) | Competência (Parte 2)); falta a convenção da equipe
-Q0267,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0268,revisar,5118,,0.38,o Jev não confirmou o tema na pergunta de verificação (P=0.32)
-Q0269,revisar,5170,,0.82,confiança 0.82 abaixo do limiar 0.85
-Q0270,revisar,5091,,0.76,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0271,revisar,5513,,0.18,confiança 0.18 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0272,revisar,4703,6734,0.49,tema em mais de um lugar da árvore (Lei de Execução Penal | Lei de Execução Penal); falta a convenção da equipe
-Q0273,revisar,5222,,0.81,confiança 0.81 abaixo do limiar 0.85
-Q0274,revisar,5157,,0.75,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
-Q0275,revisar,4701,,0.00,o Jev muda de tema quando a ordem das opções muda
-Q0276,revisar,5543,6735,0.83,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
-Q0277,revisar,4696,6722,0.49,tema em mais de um lugar da árvore (Estaturo de Idoso - Crimes | Estatuto do Idoso - Crimes); falta a convenção da equipe
-Q0278,revisar,4701,,0.01,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.38)
-Q0279,revisar,5185,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Punibilidade)
-Q0280,revisar,5466,,0.18,confiança 0.18 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Comunicação dos Atos Processuais)
-Q0281,revisar,5543,6735,0.17,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.45)
-Q0282,revisar,4704,6724,0.48,as alternativas parecem cobrar temas diferentes (questão mista)
-Q0283,revisar,5496,,0.01,confiança 0.01 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0284,revisar,5214,,0.48,confiança 0.48 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes); o tesauro aponta outro tema (Procedimento do Tribunal do Júri)
-Q0285,revisar,4376,,0.31,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.44)
-Q0286,revisar,5199,,0.76,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0287,publicar,5228,,0.97,
-Q0288,revisar,5063,,0.07,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.16); as alternativas parecem cobrar temas diferentes (questão mista)
-Q0289,revisar,4704,6724,0.49,tema em mais de um lugar da árvore (Lei Maria da Penha | Lei Maria da Penha); falta a convenção da equipe
-Q0290,revisar,4701,,0.23,confiança 0.23 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0291,revisar,4708,6728,0.29,confiança 0.29 abaixo do limiar 0.85
-Q0292,publicar,4374,,0.97,
-Q0293,publicar,5185,,0.97,
-Q0294,publicar,5211,,0.97,
-Q0295,revisar,5487,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.43)
-Q0296,revisar,5466,,0.84,o Jev muda de tema quando a ordem das opções muda
-Q0297,revisar,4695,,0.85,confiança 0.85 abaixo do limiar 0.85
-Q0298,revisar,4694,,0.20,o Jev não confirmou o tema na pergunta de verificação (P=0.45)
-Q0299,publicar,4385,,0.88,
-Q0300,publicar,5079,,0.97,
-Q0301,revisar,5197,,0.16,o Jev muda de tema quando a ordem das opções muda
-Q0302,revisar,5218,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.41)
-Q0303,publicar,5180,,0.95,
-Q0304,revisar,4701,,0.72,confiança 0.72 abaixo do limiar 0.85
-Q0305,publicar,5466,,0.90,
-Q0306,publicar,5144,,0.93,
-Q0307,revisar,4707,,0.85,o Jev muda de tema quando a ordem das opções muda
+Q0001,publicar,5524,,0.94,
+Q0002,revisar,4384,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Processos de Criminalização e Cifras Criminais (15%)
+Q0003,revisar,5560,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (18%)
+Q0004,publicar,5480,,0.94,
+Q0005,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prescrição (17%)
+Q0006,publicar,5157,,0.94,
+Q0007,revisar,5063,5466,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (31%)
+Q0008,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (14%)
+Q0009,publicar,5157,,0.94,
+Q0010,publicar,4688,,0.98,
+Q0011,publicar,4702,,0.94,
+Q0012,revisar,5560,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (13%)
+Q0013,publicar,5498,,0.98,
+Q0014,revisar,5476,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Violência contra Criança e Adolescente (8%)
+Q0015,publicar,5498,,0.98,
+Q0016,revisar,5517,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Prisões (10%)
+Q0017,revisar,5087,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (12%)
+Q0018,revisar,5539,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Juizado Especial Criminal (15%)
+Q0019,publicar,5466,,0.98,
+Q0020,revisar,5066,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (22%)
+Q0021,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento do Tribunal do Júri (8%)
+Q0022,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (19%)
+Q0023,publicar,5524,,0.94,
+Q0024,revisar,4385,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral da Criminologia (6%)
+Q0025,publicar,5087,,0.98,
+Q0026,publicar,4704,,0.98,
+Q0027,publicar,5487,,0.94,
+Q0028,revisar,5530,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (14%)
+Q0029,revisar,4684,5079,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (42%)
+Q0030,revisar,5134,5128,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Liberdade Pessoal (29%)
+Q0031,publicar,4385,,0.94,
+Q0032,revisar,5498,5490,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Das Questões e Processos Incidentes (36%)
+Q0033,publicar,5517,,0.98,
+Q0034,publicar,5476,,0.94,
+Q0035,publicar,4706,,0.98,
+Q0036,revisar,4704,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (15%)
+Q0037,revisar,5116,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (24%)
+Q0038,revisar,5543,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (10%)
+Q0039,revisar,4694,4687,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Crimes contra a Economia Popular (45%)
+Q0040,revisar,5560,5512,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (32%)
+Q0041,publicar,5184,,0.98,
+Q0042,publicar,5218,,0.94,
+Q0043,revisar,5572,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (14%)
+Q0044,revisar,5487,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sistemas e Princípios Processuais Penais (6%)
+Q0045,publicar,5087,,0.98,
+Q0046,publicar,5509,,0.98,
+Q0047,publicar,5157,,0.98,
+Q0048,publicar,5191,,0.98,
+Q0049,publicar,5149,,0.98,
+Q0050,publicar,5543,,0.94,
+Q0051,publicar,5180,,0.93,
+Q0052,revisar,4703,5199,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (29%)
+Q0053,revisar,4701,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Recursos em Espécies (21%)
+Q0054,revisar,5170,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (5%)
+Q0055,revisar,5543,5530,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Ordinário (32%)
+Q0056,publicar,5066,,0.98,
+Q0057,publicar,5175,,0.98,
+Q0058,revisar,4377,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Política Criminal (20%)
+Q0059,revisar,4368,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teorias Legitimidoras da Pena (14%)
+Q0060,publicar,5087,,0.98,
+Q0061,revisar,4703,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Recursos em Espécies (8%)
+Q0062,revisar,5180,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Processual no Tempo e no Espaço (13%)
+Q0063,publicar,4704,,0.98,
+Q0064,revisar,4695,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prescrição (18%)
+Q0065,publicar,5157,,0.94,
+Q0066,revisar,4371,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral da Criminologia (8%)
+Q0067,publicar,5087,,0.98,
+Q0068,revisar,5087,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Fé Pública e de Falsidade Documental (12%)
+Q0069,publicar,5170,,0.93,
+Q0070,revisar,5191,5199,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (26%)
+Q0071,publicar,4688,,0.98,
+Q0072,revisar,5590,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Inquérito Policial (21%)
+Q0073,publicar,5087,,0.94,
+Q0074,revisar,5180,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (11%)
+Q0075,revisar,5191,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prescrição (8%)
+Q0076,revisar,4371,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral da Criminologia (16%)
+Q0077,revisar,5170,5180,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Penal no Tempo e no Espaço (27%)
+Q0078,publicar,4697,,0.98,
+Q0079,publicar,5580,,0.98,
+Q0080,publicar,4368,,0.94,
+Q0081,publicar,4371,,0.98,
+Q0082,publicar,5087,,0.93,
+Q0083,revisar,5149,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (8%)
+Q0084,publicar,4704,,0.98,
+Q0085,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Pessoas (17%)
+Q0086,publicar,5087,,0.98,
+Q0087,revisar,5517,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal) (24%)
+Q0088,publicar,4389,,0.94,
+Q0089,revisar,5170,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (4%)
+Q0090,revisar,5530,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (20%)
+Q0091,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal) (11%)
+Q0092,revisar,5509,5490,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Das Questões e Processos Incidentes (42%)
+Q0093,publicar,5138,,0.94,
+Q0094,revisar,4371,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Criminologia no Estado Democrático de Direito (20%)
+Q0095,revisar,5138,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (16%)
+Q0096,publicar,5480,,0.93,
+Q0097,revisar,4702,4708,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Tráfico de Drogas (Direito Penal - Legislação Especial ou Penal) (38%)
+Q0098,publicar,5543,,0.98,
+Q0099,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Ilicitude (22%)
+Q0100,publicar,5102,,0.98,
+Q0101,publicar,4704,,0.98,
+Q0102,revisar,5572,5199,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (44%)
+Q0103,publicar,5476,,0.98,
+Q0104,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ações Autônomas de Impugnação (9%)
+Q0105,revisar,4385,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Processos de Criminalização e Cifras Criminais (19%)
+Q0106,revisar,5157,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Honra (4%)
+Q0107,revisar,5116,5079,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (31%)
+Q0108,revisar,5560,5512,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (34%)
+Q0109,publicar,4708,,0.94,
+Q0110,publicar,5480,,0.94,
+Q0111,publicar,4371,,0.98,
+Q0112,publicar,4705,,0.98,
+Q0113,revisar,5185,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Pública (14%)
+Q0114,revisar,5180,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Lei Processual no Tempo e no Espaço (8%)
+Q0115,publicar,4385,,0.98,
+Q0116,publicar,4708,,0.98,
+Q0117,revisar,5199,4384,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teorias Legitimidoras da Pena (37%)
+Q0118,revisar,5505,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Penal no Tempo e no Espaço (23%)
+Q0119,revisar,5180,5191,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (41%)
+Q0120,revisar,5543,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Procedimento Ordinário (19%)
+Q0121,revisar,5063,5466,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (45%)
+Q0122,revisar,4703,5199,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (39%)
+Q0123,revisar,4377,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Criminologia no Estado Democrático de Direito (10%)
+Q0124,revisar,5199,4384,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teorias Legitimidoras da Pena (42%)
+Q0125,revisar,5180,5191,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (31%)
+Q0126,revisar,5218,5211,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (25%)
+Q0127,revisar,5580,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Tráfico de Drogas (Direito Penal - Legislação Especial ou Penal) (20%)
+Q0128,revisar,5184,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prisões em Espécie (9%)
+Q0129,revisar,5543,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Maria da Penha (Direito Penal - Legislação Especial ou Penal) (3%)
+Q0130,revisar,5128,5157,0.63,confiança 0.63 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra o Patrimônio (32%)
+Q0131,publicar,5071,,0.94,
+Q0132,revisar,5498,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Violência contra Criança e Adolescente (12%)
+Q0133,revisar,5524,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Recursos em Espécies (23%)
+Q0134,publicar,5087,,0.98,
+Q0135,publicar,5157,,0.98,
+Q0136,revisar,4704,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes contra a Família (8%)
+Q0137,publicar,5498,,0.98,
+Q0138,publicar,5199,,0.98,
+Q0139,publicar,5211,,0.98,
+Q0140,publicar,5157,,0.98,
+Q0141,publicar,4385,,0.98,
+Q0142,revisar,5157,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (7%)
+Q0143,revisar,5505,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Penal no Tempo e no Espaço (19%)
+Q0144,revisar,5524,5560,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Recursos em Espécies (39%)
+Q0145,publicar,4702,,0.98,
+Q0146,publicar,5590,,0.94,
+Q0147,publicar,5498,,0.93,
+Q0148,publicar,5199,,0.98,
+Q0149,publicar,5498,,0.98,
+Q0150,publicar,4708,,0.98,
+Q0151,publicar,5517,,0.94,
+Q0152,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (20%)
+Q0153,publicar,5218,,0.94,
+Q0154,revisar,4690,,0.59,"confiança 0.59 abaixo do limiar 0.93; 2ª opção: Dos Crimes contra a Organização do Trabalho, a Propriedade Imaterial e ao Sentimento Religioso (24%)"
+Q0155,revisar,4703,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (21%)
+Q0156,publicar,4688,,0.98,
+Q0157,publicar,5517,,0.98,
+Q0158,revisar,5087,5199,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (26%)
+Q0159,revisar,5175,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra o Patrimônio (18%)
+Q0160,publicar,5199,,0.93,
+Q0161,revisar,5517,5584;5543,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Prisões (30%)
+Q0162,revisar,4380,4368,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Criminologia no Estado Democrático de Direito (26%)
+Q0163,revisar,5128,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (15%)
+Q0164,revisar,4703,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (11%)
+Q0165,publicar,4705,,0.98,
+Q0166,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal) (10%)
+Q0167,revisar,5524,5480,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Competência (28%)
+Q0168,fora,,,0.00,"cita Lei 14.597, que não tem tema na árvore, e nenhum tema tem confiança suficiente; sugestão: criar o tema"
+Q0169,publicar,5490,,0.98,
+Q0170,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (11%)
+Q0171,revisar,5185,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Lei Penal no Tempo e no Espaço (10%)
+Q0172,revisar,5466,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Sentença Penal (16%)
+Q0173,publicar,4703,,0.94,
+Q0174,revisar,5134,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Liberdade Pessoal (13%)
+Q0175,publicar,5087,,0.98,
+Q0176,publicar,5079,,0.98,
+Q0177,publicar,5543,,0.98,
+Q0178,revisar,4697,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Inquérito Policial (2%)
+Q0179,publicar,4368,,0.94,
+Q0180,publicar,5543,,0.98,
+Q0181,revisar,4695,5087,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Pública (33%)
+Q0182,revisar,5149,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Concurso de Pessoas (17%)
+Q0183,revisar,5185,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (6%)
+Q0184,revisar,5543,5517;5584,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prisões em Espécie (30%)
+Q0185,revisar,4703,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (11%)
+Q0186,publicar,5199,,0.98,
+Q0187,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sentença Penal (20%)
+Q0188,revisar,5211,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Ilicitude (16%)
+Q0189,revisar,5466,5063,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (38%)
+Q0190,revisar,4701,5539,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (36%)
+Q0191,revisar,5560,5512,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (28%)
+Q0192,publicar,5087,,0.94,
+Q0193,publicar,5543,,0.98,
+Q0194,publicar,5087,,0.94,
+Q0195,revisar,4371,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral da Criminologia (5%)
+Q0196,revisar,4385,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Processos de Criminalização e Cifras Criminais (7%)
+Q0197,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sistemas e Princípios Processuais Penais (4%)
+Q0198,revisar,5071,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Organizações Criminosas (Direito Penal - Legislação Especial ou Penal) (8%)
+Q0199,revisar,5218,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Ilicitude (16%)
+Q0200,publicar,4705,,0.98,
+Q0201,publicar,5102,,0.98,
+Q0202,revisar,5102,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Periclitação da Vida e da Saúde (2%)
+Q0203,publicar,4702,,0.98,
+Q0204,publicar,5505,,0.94,
+Q0205,revisar,5560,5512,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (29%)
+Q0206,publicar,5583,,0.94,
+Q0207,revisar,4703,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (13%)
+Q0208,revisar,5071,5149,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Vida (37%)
+Q0209,revisar,5580,5498,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Inquérito Policial (26%)
+Q0210,publicar,4697,,0.98,
+Q0211,revisar,5524,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Procedimento Ordinário (18%)
+Q0212,revisar,5543,5487,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Comunicação dos Atos Processuais (36%)
+Q0213,revisar,5466,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Tráfico de Drogas (Direito Penal - Legislação Especial ou Penal) (12%)
+Q0214,publicar,5490,,0.98,
+Q0215,revisar,5572,5199,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (30%)
+Q0216,revisar,4701,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (15%)
+Q0217,revisar,4371,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teorias Legitimidoras da Pena (16%)
+Q0218,publicar,5517,,0.94,
+Q0219,publicar,5071,,0.94,
+Q0220,publicar,5498,,0.94,
+Q0221,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Medida de Segurança (9%)
+Q0222,revisar,4374,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (15%)
+Q0223,revisar,5079,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Pública (12%)
+Q0224,revisar,5539,5199,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (37%)
+Q0225,publicar,5476,,0.93,
+Q0226,publicar,5543,,0.98,
+Q0227,publicar,5102,,0.98,
+Q0228,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ações Autônomas de Impugnação (15%)
+Q0229,revisar,5517,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Prisões (19%)
+Q0230,revisar,5211,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Pessoas (19%)
+Q0231,publicar,5218,,0.94,
+Q0232,publicar,5079,,0.98,
+Q0233,publicar,5175,,0.98,
+Q0234,publicar,4380,,0.98,
+Q0235,revisar,5560,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (17%)
+Q0236,revisar,5580,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Das Questões e Processos Incidentes (14%)
+Q0237,publicar,5175,,0.98,
+Q0238,revisar,5517,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sentença Penal (5%)
+Q0239,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Iter Criminis (15%)
+Q0240,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prescrição (10%)
+Q0241,publicar,5218,,0.94,
+Q0242,revisar,5560,5512,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (36%)
+Q0243,publicar,5175,,0.98,
+Q0244,publicar,5087,,0.98,
+Q0245,publicar,5185,,0.98,
+Q0246,revisar,5524,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (4%)
+Q0247,publicar,5498,,0.94,
+Q0248,publicar,5087,,0.98,
+Q0249,publicar,5490,,0.94,
+Q0250,revisar,5199,5572,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sentença Penal (30%)
+Q0251,publicar,5191,,0.94,
+Q0252,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prescrição (5%)
+Q0253,publicar,4371,,0.94,
+Q0254,publicar,4704,,0.98,
+Q0255,publicar,5211,,0.98,
+Q0256,revisar,5211,5218,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (39%)
+Q0257,revisar,5170,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (7%)
+Q0258,publicar,5543,,0.98,
+Q0259,revisar,5180,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Crimes (18%)
+Q0260,revisar,4374,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Criminologia no Estado Democrático de Direito (19%)
+Q0261,publicar,5134,,0.98,
+Q0262,revisar,5184,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal) (6%)
+Q0263,publicar,5490,,0.98,
+Q0264,publicar,5102,,0.98,
+Q0265,revisar,5185,5066,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Crimes (42%)
+Q0266,revisar,5480,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento do Tribunal do Júri (16%)
+Q0267,revisar,5543,4708,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Tráfico de Drogas (Direito Penal - Legislação Especial ou Penal) (43%)
+Q0268,revisar,5120,5116,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Fé Pública e de Falsidade Documental (30%)
+Q0269,revisar,4384,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Introdução ao Estudo do Direito Penal (18%)
+Q0270,publicar,5087,,0.98,
+Q0271,revisar,5512,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Recursos em Espécies (19%)
+Q0272,revisar,4703,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prescrição (5%)
+Q0273,revisar,5218,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (19%)
+Q0274,revisar,5175,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra o Patrimônio (25%)
+Q0275,revisar,4701,5487,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Comunicação dos Atos Processuais (26%)
+Q0276,revisar,5543,5590,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Provas (26%)
+Q0277,publicar,4696,,0.98,
+Q0278,revisar,5539,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (7%)
+Q0279,revisar,5175,5185,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prescrição (32%)
+Q0280,revisar,5120,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (17%)
+Q0281,revisar,5543,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Interceptação Telefônica (11%)
+Q0282,publicar,4704,,0.98,
+Q0283,publicar,5490,,0.94,
+Q0284,publicar,5228,,0.94,
+Q0285,publicar,4374,,0.98,
+Q0286,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Crimes (19%)
+Q0287,publicar,5228,,0.93,
+Q0288,revisar,5066,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Concurso de Pessoas (22%)
+Q0289,publicar,4704,,0.98,
+Q0290,revisar,4701,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (9%)
+Q0291,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Provas em Espécies (14%)
+Q0292,revisar,4374,4368,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Criminologia no Estado Democrático de Direito (26%)
+Q0293,publicar,5185,,0.93,
+Q0294,publicar,5211,,0.98,
+Q0295,publicar,5487,,0.94,
+Q0296,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (21%)
+Q0297,revisar,4695,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Crimes contra o Sistema Financeiro (17%)
+Q0298,publicar,4694,,0.98,
+Q0299,revisar,4371,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teorias Sociológicas Explicativas da Criminalidade (20%)
+Q0300,revisar,5079,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Pessoas (21%)
+Q0301,publicar,5191,,0.94,
+Q0302,revisar,5211,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Ilicitude (22%)
+Q0303,publicar,5180,,0.94,
+Q0304,revisar,4701,5539,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (29%)
+Q0305,revisar,5063,5466,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (40%)
+Q0306,publicar,4705,,0.98,
+Q0307,publicar,4707,,0.98,
 Q0308,publicar,5498,,0.93,
-Q0309,revisar,4688,6717,0.49,tema em mais de um lugar da árvore (Crimes contra o meio ambiente | Crimes contra o meio ambiente); falta a convenção da equipe
-Q0310,publicar,5505,,0.97,
-Q0311,publicar,5488,,0.97,
-Q0312,publicar,4384,,0.92,
-Q0313,revisar,5572,,0.16,confiança 0.16 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Teoria da Pena)
-Q0314,revisar,5477,,0.85,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.21)
-Q0315,publicar,5185,,0.87,
-Q0316,publicar,5224,,0.97,
-Q0317,revisar,5063,,0.69,confiança 0.69 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Concurso de Crimes)
-Q0318,publicar,5175,,0.97,
-Q0319,publicar,5071,,0.97,
-Q0320,revisar,5550,,0.41,confiança 0.41 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Inquérito Policial); o tesauro aponta outro tema (Tráfico de Drogas (Direito Penal - Legislação...
-Q0321,publicar,5071,,0.97,
-Q0322,revisar,5561,,0.69,tema em mais de um lugar da árvore (Recursos em Espécies | Recursos (Parte 03) - Espécies); falta a convenção da equipe
-Q0323,revisar,5543,6735,0.37,confiança 0.37 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Sistemas e Princípios Processuais Penais)
-Q0324,revisar,5199,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0325,publicar,5466,,0.90,
-Q0326,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0327,revisar,5203,,0.78,tema em mais de um lugar da árvore (Teoria da Pena | Teoria da Pena (Parte 1) | Teoria da Pena (Parte 2)); falta a convenção da equipe
-Q0328,revisar,4382,,0.82,confiança 0.82 abaixo do limiar 0.85
-Q0329,revisar,4705,6725,0.37,confiança 0.37 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0330,publicar,5498,,0.97,
-Q0331,revisar,5477,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Comunicação dos Atos Processuais)
-Q0332,revisar,4701,,0.52,tema em mais de um lugar da árvore (Juizado Especial Criminal | Procedimento Sumaríssimo); falta a convenção da equipe
-Q0333,revisar,4373,,0.01,o Jev muda de tema quando a ordem das opções muda; o Jev não confirmou o tema na pergunta de verificação (P=0.18)
-Q0334,publicar,4380,,0.97,
-Q0335,publicar,5218,,0.95,
-Q0336,revisar,5159,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
-Q0337,revisar,4684,6716,0.49,tema em mais de um lugar da árvore (Abuso de Autoridade | Abuso de Autoridade); falta a convenção da equipe
-Q0338,revisar,5543,6735,0.72,o Jev muda de tema quando a ordem das opções muda
-Q0339,revisar,5572,,0.30,o Jev muda de tema quando a ordem das opções muda
-Q0340,publicar,5071,,0.97,
-Q0341,revisar,5157,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra o Patrimônio | Dos Crimes Contra o Patrimônio (Parte 1) | Dos Crimes contra o Patrimônio (Parte 2)); falta a convenção da...
-Q0342,revisar,5546,,0.76,tema em mais de um lugar da árvore (Provas em Espécies | Provas em Espécie); falta a convenção da equipe
-Q0343,revisar,5472,,0.71,o Jev muda de tema quando a ordem das opções muda
-Q0344,revisar,4688,6717,0.48,tema em mais de um lugar da árvore (Crimes contra o meio ambiente | Crimes contra o meio ambiente); falta a convenção da equipe
-Q0345,publicar,5103,,0.92,
-Q0346,publicar,5583,,0.95,
-Q0347,revisar,5199,,0.68,o Jev não confirmou o tema na pergunta de verificação (P=0.28)
-Q0348,revisar,5093,,0.78,tema em mais de um lugar da árvore (Dos Crimes Contra a Administração Pública | Dos Crimes Contra a Administração Pública (Parte 1) | Dos Crimes contra a Administração Pública...
-Q0349,publicar,5175,,0.88,
-Q0350,revisar,4702,6723,0.49,tema em mais de um lugar da árvore (Lavagem de Dinheiro | Lavagem de Dinheiro); falta a convenção da equipe
-Q0351,publicar,5116,,0.97,
-Q0352,publicar,5512,,0.95,
-Q0353,revisar,5185,,0.38,confiança 0.38 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
-Q0354,revisar,5218,,0.97,o Jev não confirmou o tema na pergunta de verificação (P=0.39)
-Q0355,revisar,4708,6728,0.49,tema em mais de um lugar da árvore (Tráfico de Drogas | Tráfico de Drogas); falta a convenção da equipe
-Q0356,publicar,5066,,0.97,
-Q0357,revisar,5134,,0.75,confiança 0.75 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Iter Criminis)
-Q0358,revisar,5134,,0.20,o Jev não achou tema adequado na árvore (sugestão: o 2º mais provável); o Jev não confirmou o tema na pergunta de verificação (P=0.03)
-Q0359,revisar,4696,6722,0.00,confiança 0.00 abaixo do limiar 0.85; o assunto de origem aponta outro tema (Ação Penal (Processo Penal))
+Q0309,publicar,4688,,0.98,
+Q0310,revisar,5505,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Penal no Tempo e no Espaço (8%)
+Q0311,publicar,5487,,0.98,
+Q0312,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teorias Legitimidoras da Pena (18%)
+Q0313,revisar,5572,5199,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (38%)
+Q0314,publicar,5476,,0.98,
+Q0315,publicar,5185,,0.98,
+Q0316,revisar,5218,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (4%)
+Q0317,publicar,5191,,0.94,
+Q0318,publicar,5175,,0.98,
+Q0319,publicar,5071,,0.94,
+Q0320,publicar,5543,,0.94,
+Q0321,revisar,5071,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Crimes (20%)
+Q0322,revisar,5560,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (13%)
+Q0323,revisar,5590,5543,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Provas em Espécies (43%)
+Q0324,revisar,5199,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal) (14%)
+Q0325,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Ordinário (19%)
+Q0326,publicar,4708,,0.98,
+Q0327,publicar,5199,,0.94,
+Q0328,publicar,4380,,0.94,
+Q0329,revisar,5543,4705,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Organizações Criminosas (Direito Penal - Legislação Especial ou Penal) (29%)
+Q0330,revisar,5498,5580,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sistemas e Princípios Processuais Penais (31%)
+Q0331,publicar,5476,,0.98,
+Q0332,publicar,5539,,0.94,
+Q0333,revisar,5071,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Iter Criminis (13%)
+Q0334,publicar,4380,,0.98,
+Q0335,revisar,5218,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Ilicitude (9%)
+Q0336,publicar,5157,,0.98,
+Q0337,publicar,4684,,0.98,
+Q0338,revisar,5543,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Provas (21%)
+Q0339,revisar,5572,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Ordinário (20%)
+Q0340,publicar,5071,,0.96,
+Q0341,publicar,5157,,0.98,
+Q0342,publicar,5543,,0.98,
+Q0343,revisar,5191,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (6%)
+Q0344,publicar,4688,,0.98,
+Q0345,publicar,5102,,0.98,
+Q0346,revisar,5583,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sistemas e Princípios Processuais Penais (6%)
+Q0347,revisar,5066,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Ilicitude (20%)
+Q0348,publicar,5087,,0.93,
+Q0349,publicar,5175,,0.94,
+Q0350,publicar,4702,,0.98,
+Q0351,publicar,5116,,0.94,
+Q0352,revisar,5512,5560,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Recursos em Espécies (34%)
+Q0353,revisar,5185,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Comunicação dos Atos Processuais (6%)
+Q0354,revisar,5218,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (21%)
+Q0355,publicar,4708,,0.94,
+Q0356,publicar,5066,,0.98,
+Q0357,publicar,5134,,0.98,
+Q0358,revisar,5134,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Liberdade Pessoal (19%)
+Q0359,revisar,4701,4696,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Estaturo de Idoso - Crimes (Direito Penal - Legislação Especial ou Penal) (25%)
+Q0360,revisar,4389,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Classificação das Vítimas (14%)
+Q0361,publicar,5211,,0.98,
+Q0362,publicar,5543,,0.98,
+Q0363,publicar,5087,,0.98,
+Q0364,revisar,5228,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (15%)
+Q0365,revisar,5066,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (7%)
+Q0366,publicar,5543,,0.98,
+Q0367,publicar,5530,,0.98,
+Q0368,publicar,5498,,0.98,
+Q0369,publicar,4702,,0.94,
+Q0370,publicar,5517,,0.98,
+Q0371,revisar,5063,5466;5191,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (31%)
+Q0372,publicar,5543,,0.94,
+Q0373,publicar,5180,,0.94,
+Q0374,publicar,5147,,0.98,
+Q0375,publicar,5218,,0.94,
+Q0376,revisar,5218,5211,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (33%)
+Q0377,publicar,5476,,0.98,
+Q0378,publicar,5116,,0.98,
+Q0379,publicar,4704,,0.98,
+Q0380,revisar,5572,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Ordinário (3%)
+Q0381,publicar,5498,,0.94,
+Q0382,publicar,5218,,0.94,
+Q0383,publicar,4702,,0.98,
+Q0384,publicar,5490,,0.98,
+Q0385,publicar,5543,,0.98,
+Q0386,revisar,4368,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Saúde Pública e Dos Crimes Contra à Paz Pública (10%)
+Q0387,publicar,5590,,0.94,
+Q0388,revisar,5530,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (12%)
+Q0389,revisar,5218,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (21%)
+Q0390,revisar,4385,4374,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Política Criminal (33%)
+Q0391,revisar,5063,5466,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (42%)
+Q0392,publicar,5199,,0.98,
+Q0393,fora,,,0.00,Direito Penal Militar (Direito Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0394,publicar,5480,,0.94,
+Q0395,revisar,5476,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (12%)
+Q0396,publicar,5087,,0.98,
+Q0397,revisar,5120,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Dignidade Sexual (14%)
+Q0398,publicar,5175,,0.98,
+Q0399,publicar,5087,,0.98,
+Q0400,publicar,5211,,0.98,
+Q0401,publicar,5191,,0.98,
+Q0402,publicar,4684,,0.98,
+Q0403,publicar,5180,,0.94,
+Q0404,publicar,5116,,0.98,
+Q0405,revisar,5512,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Recursos em Espécies (24%)
+Q0406,publicar,5087,,0.98,
+Q0407,publicar,5572,,0.98,
+Q0408,publicar,5490,,0.98,
+Q0409,publicar,5211,,0.94,
+Q0410,publicar,5211,,0.98,
+Q0411,publicar,5087,,0.98,
+Q0412,publicar,5087,,0.98,
+Q0413,publicar,5087,,0.94,
+Q0414,publicar,4695,,0.94,
+Q0415,publicar,4695,,0.94,
+Q0416,fora,,,0.67,Direito Penal Militar (Direito Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0417,revisar,4384,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (17%)
+Q0418,publicar,4704,,0.94,
+Q0419,publicar,4385,,0.94,
+Q0420,publicar,4704,,0.98,
+Q0421,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (8%)
+Q0422,publicar,5180,,0.94,
+Q0423,publicar,4695,,0.94,
+Q0424,fora,,,0.67,Direito Penal Militar (Direito Processual Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0425,revisar,5572,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (9%)
+Q0426,publicar,5175,,0.98,
+Q0427,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (10%)
+Q0428,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (23%)
+Q0429,publicar,5071,,0.94,
+Q0430,publicar,4704,,0.98,
+Q0431,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (17%)
+Q0432,revisar,5466,5063,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (47%)
+Q0433,revisar,5071,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Crimes (18%)
+Q0434,publicar,5498,,0.98,
+Q0435,revisar,4368,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Política Criminal (20%)
+Q0436,publicar,4704,,0.98,
+Q0437,publicar,5180,,0.98,
+Q0438,publicar,5116,,0.98,
+Q0439,publicar,5087,,0.94,
+Q0440,publicar,5498,,0.94,
+Q0441,revisar,5539,5199,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (26%)
+Q0442,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (15%)
+Q0443,publicar,5211,,0.94,
+Q0444,publicar,5543,,0.98,
+Q0445,publicar,4705,,0.94,
+Q0446,revisar,5517,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Prisões (12%)
+Q0447,publicar,5185,,0.98,
+Q0448,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sentença Penal (11%)
+Q0449,revisar,5228,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Honra (5%)
+Q0450,revisar,5560,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (10%)
+Q0451,publicar,5498,,0.98,
+Q0452,publicar,5498,,0.98,
+Q0453,publicar,4704,,0.98,
+Q0454,publicar,5180,,0.98,
+Q0455,revisar,5572,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (6%)
+Q0456,revisar,5180,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Introdução ao Estudo do Direito Penal (4%)
+Q0457,publicar,5476,,0.94,
+Q0458,publicar,5218,,0.98,
+Q0459,revisar,4695,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Pública (8%)
+Q0460,publicar,5144,,0.98,
+Q0461,revisar,5560,5487,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Comunicação dos Atos Processuais (25%)
+Q0462,publicar,5071,,0.94,
+Q0463,publicar,5087,,0.98,
+Q0464,publicar,4689,,0.98,
+Q0465,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Pública (8%)
+Q0466,publicar,5218,,0.94,
+Q0467,fora,,,0.67,Direito Penal Militar (Direito Processual Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0468,revisar,5079,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Liberdade Pessoal (15%)
+Q0469,revisar,4374,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Processos de Criminalização e Cifras Criminais (24%)
+Q0470,publicar,4703,,0.94,
+Q0471,publicar,5087,,0.98,
+Q0472,publicar,5116,,0.98,
+Q0473,publicar,5498,,0.98,
+Q0474,revisar,4368,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Sistemas e Princípios Processuais Penais (12%)
+Q0475,publicar,5175,,0.94,
+Q0476,publicar,5524,,0.98,
+Q0477,revisar,5185,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (11%)
+Q0478,publicar,5480,,0.98,
+Q0479,fora,,,0.67,Direito Penal Militar (Direito Processual Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0480,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Crimes (15%)
+Q0481,revisar,5170,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (24%)
+Q0482,revisar,5505,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Penal no Tempo e no Espaço (16%)
+Q0483,publicar,5175,,0.98,
+Q0484,publicar,4702,,0.98,
+Q0485,publicar,5180,,0.94,
+Q0486,revisar,5505,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Das Questões e Processos Incidentes (14%)
+Q0487,revisar,5157,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (6%)
+Q0488,publicar,5087,,0.98,
+Q0489,revisar,5185,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (7%)
+Q0490,publicar,5211,,0.98,
+Q0491,publicar,5157,,0.93,
+Q0492,publicar,5157,,0.94,
+Q0493,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Ordinário (13%)
+Q0494,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Provas em Espécies (11%)
+Q0495,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Competência (9%)
+Q0496,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (4%)
+Q0497,revisar,5512,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Recursos em Espécies (23%)
+Q0498,revisar,5128,4704,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Maria da Penha (Direito Penal - Legislação Especial ou Penal) (44%)
+Q0499,publicar,5218,,0.98,
+Q0500,revisar,4695,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Pública (10%)
+Q0501,publicar,4704,,0.98,
+Q0502,publicar,5087,,0.94,
+Q0503,publicar,4377,,0.98,
+Q0504,revisar,5218,5211,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (33%)
+Q0505,publicar,5087,,0.98,
+Q0506,revisar,5180,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Processual no Tempo e no Espaço (11%)
+Q0507,revisar,5211,5218,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (40%)
+Q0508,revisar,4700,5543,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Provas em Espécies (32%)
+Q0509,publicar,5498,,0.94,
+Q0510,revisar,5590,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Provas em Espécies (14%)
+Q0511,revisar,5505,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Competência (12%)
+Q0512,publicar,5480,,0.94,
+Q0513,publicar,4688,,0.98,
+Q0514,revisar,5583,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Concurso de Pessoas (10%)
+Q0515,publicar,4704,,0.98,
+Q0516,revisar,4690,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lavagem de Dinheiro (Direito Penal - Legislação Especial ou Penal) (6%)
+Q0517,revisar,5120,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (12%)
+Q0518,publicar,5087,,0.98,
+Q0519,publicar,5498,,0.98,
+Q0520,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes contra as Instituições Democráticas (8%)
+Q0521,revisar,4384,5199,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (39%)
+Q0522,revisar,5476,5509,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Nulidades (33%)
+Q0523,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (24%)
+Q0524,revisar,5185,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (9%)
+Q0525,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sentença Penal (2%)
+Q0526,revisar,4385,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teorias Legitimidoras da Pena (24%)
+Q0527,fora,,,0.67,Direito Penal Militar (Direito Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0528,publicar,5180,,0.94,
+Q0529,publicar,5087,,0.98,
+Q0530,publicar,5543,,0.98,
+Q0531,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (18%)
+Q0532,revisar,5157,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (14%)
+Q0533,publicar,5134,,0.94,
+Q0534,revisar,4377,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Criminologia no Estado Democrático de Direito (5%)
+Q0535,publicar,4704,,0.98,
+Q0536,publicar,5543,,0.94,
+Q0537,publicar,5480,,0.98,
+Q0538,publicar,5228,,0.98,
+Q0539,revisar,4695,5157,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra o Patrimônio (31%)
+Q0540,revisar,5170,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Fato Típico (19%)
+Q0541,publicar,5087,,0.98,
+Q0542,revisar,5517,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Prisões (10%)
+Q0543,revisar,5509,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Ações Autônomas de Impugnação (12%)
+Q0544,revisar,5480,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sistemas e Princípios Processuais Penais (4%)
+Q0545,revisar,4368,4374,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Política Criminal (35%)
+Q0546,revisar,5087,5156,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes contra o Funcionamento dos Serviços Essenciais (28%)
+Q0547,publicar,5185,,0.94,
+Q0548,revisar,5560,5512,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (42%)
+Q0549,publicar,4703,,0.94,
+Q0550,publicar,5157,,0.94,
+Q0551,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (18%)
+Q0552,revisar,5509,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sistemas e Princípios Processuais Penais (23%)
+Q0553,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Competência (22%)
+Q0554,publicar,5128,,0.98,
+Q0555,publicar,5199,,0.98,
+Q0556,revisar,4385,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Etapas Evolutivas e Escolas Criminológicas (13%)
+Q0557,revisar,5539,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Juizado Especial Criminal (14%)
+Q0558,revisar,5580,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Provas (14%)
+Q0559,publicar,5087,,0.98,
+Q0560,revisar,5487,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Prescrição (4%)
+Q0561,publicar,5116,,0.98,
+Q0562,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Dignidade Sexual (4%)
+Q0563,publicar,4385,,0.98,
+Q0564,revisar,4385,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teorias Legitimidoras da Pena (18%)
+Q0565,revisar,5466,5063,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (30%)
+Q0566,publicar,5087,,0.94,
+Q0567,revisar,5199,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei de Execução Penal (Direito Penal - Legislação Especial ou Processo Penal) (20%)
+Q0568,publicar,5180,,0.94,
+Q0569,revisar,5199,4377,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Processos de Criminalização e Cifras Criminais (28%)
+Q0570,revisar,5560,5476,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ações Autônomas de Impugnação (27%)
+Q0571,revisar,5543,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Competência (6%)
+Q0572,publicar,4697,,0.98,
+Q0573,publicar,5157,,0.98,
+Q0574,revisar,5191,,0.00,confiança 0.00 abaixo do limiar 0.93; 2ª opção: Lei Penal no Tempo e no Espaço (10%)
+Q0575,publicar,5490,,0.94,
+Q0576,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Introdução ao Estudo do Direito Penal (15%)
+Q0577,publicar,4704,,0.94,
+Q0578,publicar,4702,,0.98,
+Q0579,revisar,5543,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Inquérito Policial (4%)
+Q0580,publicar,4690,,0.98,
+Q0581,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (24%)
+Q0582,publicar,4693,,0.98,
+Q0583,publicar,5185,,0.98,
+Q0584,publicar,5185,,0.98,
+Q0585,publicar,5175,,0.98,
+Q0586,revisar,5517,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria Geral das Prisões (13%)
+Q0587,publicar,5185,,0.98,
+Q0588,revisar,4385,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Etapas Evolutivas e Escolas Criminológicas (15%)
+Q0589,revisar,5199,5572,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sentença Penal (34%)
+Q0590,publicar,5228,,0.98,
+Q0591,revisar,5560,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Parte Geral dos Recursos (24%)
+Q0592,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes contra as Finanças Públicas (17%)
+Q0593,revisar,5066,5199,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teoria da Pena (27%)
+Q0594,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Iter Criminis (17%)
+Q0595,publicar,5498,,0.98,
+Q0596,publicar,5180,,0.94,
+Q0597,revisar,5580,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Inquérito Policial (17%)
+Q0598,revisar,4380,4385,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Teorias Sociológicas Explicativas da Criminalidade (28%)
+Q0599,fora,,,0.59,Direito Penal Militar (Direito Processual Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0600,revisar,5185,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Punibilidade (18%)
+Q0601,publicar,5539,,0.94,
+Q0602,revisar,5466,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (19%)
+Q0603,publicar,5087,,0.98,
+Q0604,publicar,5087,,0.98,
+Q0605,publicar,5487,,0.94,
+Q0606,publicar,5087,,0.98,
+Q0607,revisar,4385,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Criminologia no Estado Democrático de Direito (22%)
+Q0608,publicar,5180,,0.94,
+Q0609,revisar,4695,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Pública (4%)
+Q0610,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Provas em Espécies (21%)
+Q0611,publicar,5116,,0.98,
+Q0612,publicar,5120,,0.94,
+Q0613,publicar,4689,,0.98,
+Q0614,publicar,5180,,0.94,
+Q0615,revisar,5191,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Processo Penal) (20%)
+Q0616,publicar,5180,,0.94,
+Q0617,revisar,5466,5063,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Ação Penal (Penal) (26%)
+Q0618,publicar,5218,,0.98,
+Q0619,revisar,5530,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Procedimento Sumaríssimo (20%)
+Q0620,publicar,5147,,0.94,
+Q0621,publicar,5543,,0.98,
+Q0622,publicar,5180,,0.98,
+Q0623,publicar,5543,,0.98,
+Q0624,publicar,4704,,0.98,
+Q0625,publicar,5087,,0.98,
+Q0626,revisar,5505,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (6%)
+Q0627,revisar,5125,5144,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Saúde Pública e Dos Crimes Contra à Paz Pública (39%)
+Q0628,revisar,5498,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Sistemas e Princípios Processuais Penais (18%)
+Q0629,publicar,4371,,0.93,
+Q0630,publicar,5079,,0.98,
+Q0631,publicar,5087,,0.94,
+Q0632,publicar,5087,,0.98,
+Q0633,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra o Patrimônio (2%)
+Q0634,publicar,5487,,0.94,
+Q0635,publicar,5211,,0.94,
+Q0636,revisar,4695,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Pública (25%)
+Q0637,publicar,5087,,0.98,
+Q0638,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes contra o Funcionamento dos Serviços Essenciais (6%)
+Q0639,publicar,4707,,0.98,
+Q0640,publicar,5218,,0.94,
+Q0641,publicar,5087,,0.98,
+Q0642,publicar,4704,,0.98,
+Q0643,revisar,4374,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teorias Legitimidoras da Pena (10%)
+Q0644,revisar,5087,5180,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Lei Penal no Tempo e no Espaço (26%)
+Q0645,revisar,5218,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Teoria do Crime: Culpabilidade (11%)
+Q0646,revisar,4371,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Política Criminal (7%)
+Q0647,publicar,5487,,0.98,
+Q0648,revisar,4705,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Provas em Espécies (6%)
+Q0649,fora,,,0.67,Direito Penal Militar (Direito Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0650,fora,,,0.59,Direito Penal Militar (Direito Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0651,publicar,4704,,0.98,
+Q0652,revisar,5087,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (6%)
+Q0653,publicar,4704,,0.98,
+Q0654,fora,,,0.59,Direito Penal Militar (Direito Processual Penal Militar): a árvore não tem tema militar; sugestão: criar o ramo
+Q0655,revisar,4385,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Etapas Evolutivas e Escolas Criminológicas (14%)
+Q0656,publicar,4704,,0.94,
+Q0657,revisar,4684,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Dos Crimes Contra a Administração Judicial (14%)
+Q0658,revisar,4380,,0.59,confiança 0.59 abaixo do limiar 0.93; 2ª opção: Criminologia no Estado Democrático de Direito (12%)
+Q0659,revisar,4702,,0.67,confiança 0.67 abaixo do limiar 0.93; 2ª opção: Crimes contra o Sistema Financeiro (20%)

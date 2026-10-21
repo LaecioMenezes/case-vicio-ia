@@ -30,6 +30,8 @@ from common import INTERIM, OUT, ROOT, Tree, read_jsonl, write_json
 from s02_taxonomy import norm
 
 CURADO = ROOT / "tesauro" / "tesauro_curado.txt"
+ENRIQUECIDO = ROOT / "tesauro" / "tesauro_enriquecido.jsonl"
+TERMOS_JEV = OUT / "termos_propostos_jev.csv"
 CROSS = ROOT / "tesauro" / "crosswalk_origem.txt"
 DIPLOMA = re.compile(r"^(Lei(?: Complementar)? [\d.]+/\d{4}|Decreto-Lei [\d.]+/\d{4}|CPP|CP|CF|LEP|LCP|ECA)\s*(.*)$")
 
@@ -148,6 +150,28 @@ def crosswalk(tree):
     return cross
 
 
+def enriquecer(nos, conc):
+    """Junta à ficha curada o que foi proposto por modelo e revisado, sempre num campo separado (a origem fica
+    explícita): escopo, termos e leis propostos pelo LLM (tesauro/tesauro_enriquecido.jsonl, ver prep_tesauro.py),
+    exemplos de questão e os termos aceitos pelo Jev na etapa 1 (out/termos_propostos_jev.csv). Os nós novos sem
+    ficha própria herdam a do tema-base."""
+    if ENRIQUECIDO.exists():
+        for r in read_jsonl(ENRIQUECIDO):
+            if r["id"] in nos:
+                nos[r["id"]].update(escopo=r["escopo"], nao_cobre=r["nao_cobre"], altLabel_llm=r["termos"],
+                                    refs_llm=r["leis"], exemplos=r["exemplos"])
+    base_de = {c["key"]: c["base"] for c in conc}
+    if TERMOS_JEV.exists():
+        with open(TERMOS_JEV, encoding="utf-8-sig") as f:
+            for r in csv.DictReader(f):
+                if r["aceito"] == "True" and r["conceito_proposto"] in base_de:
+                    nos[base_de[r["conceito_proposto"]]].setdefault("altLabel_jev", []).append(r["termo"])
+    for d in nos.values():
+        b = d.get("herdado_de")
+        if b and "escopo" not in d and "escopo" in nos[b]:
+            d.update({k: nos[b][k] for k in ("escopo", "nao_cobre", "altLabel_llm", "refs_llm", "exemplos")})
+
+
 def main():
     tree = Tree()
     cur = ler_curadoria()
@@ -178,6 +202,7 @@ def main():
             "nota_en": c["nota_en"], "novo": n["novo"], "lixeira": n["generico"], "herdado_de": herdado,
         }
 
+    enriquecer(nos, conc)
     cross = crosswalk(tree)
     sem_curadoria = [i for i, d in nos.items() if not d["altLabel"]]
     termo_conc = defaultdict(set)
@@ -202,7 +227,7 @@ def main():
     tipos = defaultdict(int)
     for f in fams:
         tipos[f["tipo"]] += 1
-    print(f"{len(nos)} descritores | {len(conc)} conceitos N1 para o Jev | famílias: {dict(tipos)}")
+    print(f"{len(nos)} descritores | {len(conc)} conceitos N1 | famílias: {dict(tipos)}")
     print(f"herdados do tema-base: {len(herdados)} | sem curadoria: {sem_curadoria}")
     print(f"assunto_origem com correspondência: {sum(bool(v) for v in cross.values())}/{len(cross)} | "
           f"termos de entrada em mais de um conceito: {len(repetidos)}")

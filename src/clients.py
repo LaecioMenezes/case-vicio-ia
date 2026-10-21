@@ -157,6 +157,33 @@ def llm_json(model, system, user, schema, max_tokens=800):
     return resp["parsed"], resp.get("usage") or {}
 
 
+def embed(model, textos, lote=64):
+    """Embeddings pela OpenRouter (/embeddings), com cache por texto em cache/emb. Usado só na preparação
+    (prep_embeddings.py); a decisão lê os vetores já gravados em artefatos/."""
+    vetores, faltam = {}, []
+    for t in dict.fromkeys(textos):
+        p = PASTAS["resp"] / "emb" / f"{sha({'model': model, 'input': t})}.json"
+        if p.exists():
+            USAGE["cache_hits"] += 1
+            vetores[t] = json.loads(p.read_text(encoding="utf-8"))["response"]
+        else:
+            faltam.append(t)
+    key = env("OPENROUTER_API_KEY")
+    for i in range(0, len(faltam), lote):
+        bloco = faltam[i:i + lote]
+        r = _post(f"{OPENROUTER}/embeddings", {"model": model, "input": bloco},
+                  {"Authorization": f"Bearer {key}", "X-Title": "case-vicio-ia"})
+        custo = (r.get("usage") or {}).get("cost") or 0
+        USAGE["emb_usd"] = USAGE.get("emb_usd", 0) + custo
+        USAGE["calls"] += 1
+        for t, d in zip(bloco, sorted(r["data"], key=lambda d: d["index"])):
+            vetores[t] = d["embedding"]
+            p = PASTAS["resp"] / "emb" / f"{sha({'model': model, 'input': t})}.json"
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(json.dumps({"key": p.stem, "response": d["embedding"]}), encoding="utf-8")
+    return [vetores[t] for t in textos]
+
+
 def jev(state, questions):
     """Envia state + perguntas tipadas (choice/noul) e devolve as respostas normalizadas:
     {"answers": {nome: {"type": "choice", "choice", "probabilities", "confidence"}
